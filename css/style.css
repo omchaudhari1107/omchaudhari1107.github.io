@@ -1,0 +1,497 @@
+:root {
+    font-size: 62.5%;
+
+    --color-dark: #16161A;
+    --color-gray: #242629;
+    --color-light-gray: #94A1B2;
+    --color-white: #FFFFFE;
+    --color-green: #2CB67D;
+    --color-arrow-gray: #72757E;
+    --color-red: #ff3f34;
+
+    --gap: 2.4rem
+}
+#cv{
+    font-size: x-large;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+#home{
+    flex-direction: row;
+    justify-content: space-around;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 6.5rem;
+    line-height: 7.2rem;
+}
+
+h2 {
+    font-size: 6.4rem;
+}
+
+h3 {
+    font-size: 4.8rem;
+}
+
+h4 {
+    font-size: 3.2rem;
+}
+#iama{
+    font-size: xx-large;
+}
+h5 {
+    font-size: 2.4rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+p, label {
+    font-size: 1.6rem;
+    color: var(--color-light-gray);
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.bg-gray {
+    background-color: var(--color-gray);
+}
+
+.container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+.full-vh {
+    min-height: 100vh;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.gap {
+    gap: var(--gap);
+}
+
+.topbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.topbar {
+    align-items: center;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 100%;
+
+    height: 6rem;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu {
+    margin-right: -2.4rem;
+}
+
+.menu-item a {
+    display: block;
+    padding: 0 2.4rem;
+    color: var(--color-light-gray);
+    font-size: 2rem;
+    text-transform: lowercase;
+    line-height: 4.8rem;
+
+    transition: all 300ms ease-in-out;
+}
+
+.menu-item a:hover{
+    color: var(--color-white);
+}
+
+.hi {
+    display: block;
+    font-size: 2.4rem;
+}
+
+.hi, .iam-job {
+    font-weight: 400;
+}
+
+.iam-job {
+    font-size: 3.2rem;
+    color: var(--color-green);
+}
+
+.arrow-icon {
+    color: var(--color-arrow-gray);
+
+    position: absolute;
+    bottom: 4rem;
+}
+
+.title-section {
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.avatar {
+    margin-top: 5rem;
+    width: 50rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--color-green);
+    padding: 1rem;
+    animation: ani 10s infinite;
+}
+@keyframes ani{
+	0%{transform: scale(1);
+        border: 0.5rem solid rgb(76, 0, 255);}
+    25%{transform: scale(1.1);
+        border: 0.5rem solid rgb(0, 162, 255);}
+    75%{transform: scale(1.1);
+            border: 0.5rem solid rgb(174, 0, 255);}
+	100%{transform: scale(1);
+        border: 0.5rem solid rgb(76, 0, 255);}
+}
+.custom{
+    width: 100%;
+    justify-content: center;
+}
+.about-desc {
+    max-width: 84rem;
+    text-align: center;
+}
+
+.about-desc > p {
+        margin-bottom: var(--gap);
+        text-align: justify;
+        transition: all 0.6s ease-in-out;
+        cursor: auto;
+    }
+.about-desc > p:hover{
+        color: #FFFFFE;
+}
+.hover{
+    transition: all 0.3s ease;
+}
+.hover:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #16161A;
+    font-weight: bold;
+}
+.micro-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.micro-card {
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    
+    width: 12rem;
+    height: 12rem;
+    padding: 1.6rem 2.4rem;
+    border-radius: 1.6rem;
+}
+
+.micro-cards.skill-cards {
+    max-width: 32rem;
+    gap: 1.6rem;
+}
+
+.micro-card.skill-card {
+    width: 9.6rem;
+    height: 9.6rem;
+}
+
+.micro-card.skill-card span:nth-child(2) {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.cards {
+    max-width: 100rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+}
+
+.card {
+    max-width: 32rem;
+    background-color: var(--color-dark);
+    padding: 0.8rem 0.8rem 1.6rem 0.8rem;
+    border-radius: 1.6rem;
+    transition: all 300ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.card-thumbnail {
+    width: 30.4rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+
+.card-body {
+    padding: 0 0.8rem;
+}
+
+.card-title {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+
+.card-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card-footer {
+    margin-top: 1.6rem;
+    align-items: center;
+}
+
+.card-tag {
+    font-size: 1.2rem;
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+    border-radius: 1.6rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.project-link {
+    color: var(--color-white);
+    gap: 0.8rem;
+}
+
+.micro-card.link-card {
+    transition: all 300ms ease-in-out;
+}
+
+.micro-card.link-card:hover {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+}
+
+.footer {
+    height: 8rem;
+    border-top: 0.1rem solid var(--color-gray);
+    
+    font-size: 12px;
+}
+
+.footer .heart-icon {
+    color: var(--color-red);
+}
+
+.footer .link-to-source {
+    color: var(--color-white);
+    text-decoration: underline;
+
+    transition: all 200ms ease-in-out;
+}
+
+.footer .link-to-source:hover {
+    color: var(--color-green);
+}
+@media(max-width:1248px){
+    .avatar{
+        margin-top: 10rem;
+        width: 40rem;
+    }
+}
+@media(max-width:1016px){
+    #home{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6.4rem;
+    }
+
+    .topbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.4rem;
+    }
+    
+    .bar-1, .bar-2, .bar-3 {
+        display: block;
+        background-color: var(--color-white);
+        width: 4rem;
+        height: 0.4rem;
+        margin: 0.7rem 0;
+        border-radius: 0.1rem;
+        transition: all 300ms ease-in-out;
+    }
+
+    #open-close-menu:checked + .menu-icon .bar-1 {
+        transform: translate(0, 12px) rotate(-45deg);
+    }
+    
+    #open-close-menu:checked + .menu-icon .bar-2 {
+        opacity: 0;
+    }
+    
+    #open-close-menu:checked + .menu-icon .bar-3 {
+        transform: translate(0, -10px) rotate(45deg);
+    }
+
+    #open-close-menu:not(#open-close-menu:checked) ~ .menu {
+        display: none;
+    }
+    
+    .menu {
+        width: 100%;
+    }
+    
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+        height: calc(100vh);
+        margin-right:3.4% ;
+    }
+
+    .menu-item a {
+        padding: 1.6rem;
+    }
+}
+@media (max-width:535px){
+    .avatar{
+        margin-top: 10rem;
+        width: 30rem;
+    }
+    #iam{
+        font-size: 6rem;
+    }
+}
+@media (max-width:505px){
+    #iam{
+        font-size: 5.5rem;
+    }
+}
+@media (max-width:467px){
+    .avatar{
+        margin-top: 6rem;
+    }
+    #iam{
+        font-size: 5rem;
+    }
+}
+@media (max-width:431px){
+    .avatar{
+        margin-top: 5rem;
+    }
+    #iam{
+        font-size: 4rem;
+        margin-bottom: -20px;
+    }
+    .hi{
+        font-size: 2rem;
+        margin-bottom: -10px;
+    }
+    .iam-job{
+        font-size: 2.5rem;
+    }
+    #iama{
+        font-size: large;
+        margin-top: -10px;
+    }
+    .presentation{
+        margin-top: 10px;
+    }
+}
+@media (max-width:353px){
+    .avatar{
+        width: 27rem;
+    }
+    #iam{
+        font-size: 3rem;
+        margin-bottom: -20px;
+    }
+    .hi{
+        font-size: 1.6rem;
+        margin-bottom: -20px;
+    }
+    .iam-job{
+        font-size: 2rem;
+    }
+    #iama{
+        font-size: small;
+        margin-top: -10px;
+    }
+    .presentation{
+        margin-top: 20px;
+    }
+}
+@media (max-width:325px){
+    .card{
+        max-width: 30rem;
+    }
+    .card-thumbnail{
+    width: 28.4rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    }
+}
