@@ -14,6 +14,9 @@
 #cv{
     font-size: x-large;
 }
+.presentation{
+    margin-top: 7%;
+}
 * {
     margin: 0;
     padding: 0;
@@ -172,9 +175,21 @@ p, label {
 
 .arrow-icon {
     color: var(--color-arrow-gray);
-
+    animation: zin 1s infinite;
     position: absolute;
     bottom: 4rem;
+}
+@keyframes zin {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.4);
+        fill: white;
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .title-section {
@@ -183,7 +198,7 @@ p, label {
 }
 
 .avatar {
-    margin-top: 5rem;
+    margin-top: 7rem;
     width: 50rem;
     border-radius: 50%;
     border: 0.5rem solid var(--color-green);
@@ -217,6 +232,7 @@ p, label {
     }
 .about-desc > p:hover{
         color: #FFFFFE;
+        transform: scale(1.1);
 }
 .hover{
     transition: all 0.3s ease;
@@ -456,9 +472,6 @@ p, label {
         font-size: large;
         margin-top: -10px;
     }
-    .presentation{
-        margin-top: 10px;
-    }
 }
 @media (max-width:353px){
     .avatar{
@@ -478,9 +491,6 @@ p, label {
     #iama{
         font-size: small;
         margin-top: -10px;
-    }
-    .presentation{
-        margin-top: 20px;
     }
 }
 @media (max-width:325px){
