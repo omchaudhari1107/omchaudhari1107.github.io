@@ -1,5 +1,5 @@
 var options = {
-    strings: ["Full-Stack Dev", "Learner🔍"],
+    strings: ["Full-Stack Dev", "Learner🔍","Django Dev❤️","Programmer🔥"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
