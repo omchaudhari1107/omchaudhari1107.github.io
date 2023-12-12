@@ -11,6 +11,21 @@
 
     --gap: 2.4rem
 }
+.live{
+    border: 1px solid rgb(0, 140, 255);
+    color: rgb(0, 140, 255);
+    background-color: transparent;
+    /* padding: 0.6rem 1rem; */
+    text-align: center;
+    border-radius:2em ;
+    width: 30%;
+    transition: all 1s ease;
+}
+.live:hover{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: var(--color-green);
+}
 #cv{
     font-size: x-large;
 }
