@@ -249,7 +249,8 @@ p, label {
     border-radius: 50%;
     border: 0.5rem solid var(--color-green);
     padding: 1rem;
-    animation: ani 10s infinite;
+    transition: all 2s ease-in-out;
+    animation: ani 10s linear infinite;
 }
 
 @keyframes ani {
@@ -264,7 +265,7 @@ p, label {
     }
 
     75% {
-        transform: scale(1.1);
+        transform: scale(1.2);
         border: 0.5rem solid rgb(174, 0, 255);
     }
 
@@ -273,7 +274,6 @@ p, label {
         border: 0.5rem solid rgb(76, 0, 255);
     }
 }
-
 .custom {
     width: 100%;
     justify-content: center;
