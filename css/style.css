@@ -416,6 +416,7 @@ p, label {
 
 .footer .heart-icon {
     color: var(--color-red);
+    font-size: larger;
 }
 
 .footer .link-to-source {
