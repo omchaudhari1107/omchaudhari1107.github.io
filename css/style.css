@@ -11,7 +11,10 @@
 
     --gap: 2.4rem
 }
-
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 162, 255);
+  }
 .live {
     border: 1px solid rgb(0, 140, 255);
     color: rgb(0, 140, 255);
@@ -338,7 +341,7 @@ p, label {
 }
 
 .cards {
-    max-width: 100rem;
+    /* max-width: 100rem; */
     justify-content: center;
     flex-wrap: wrap;
     gap: 2.4rem;
