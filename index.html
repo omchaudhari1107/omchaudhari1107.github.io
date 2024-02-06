@@ -19,7 +19,26 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-sea-anemone@3/tsparticles.preset.seaAnemone.bundle.min.js"></script>
+
     <style>
+         #custom-op #tsparticles{
+            
+            opacity: 0.7; /* Adjust the opacity value as needed (0.0 to 1.0) */
+
+        }
+        #tsparticles {
+            /* position: absolute; */
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -100;
+            opacity: 0.5;
+            /* Set the desired z-index value */
+
+        }
+
         .typed-cursor {
             font-weight: bolder;
             font-size: xx-large;
@@ -62,10 +81,9 @@
         <span class="iconify arrow-icon" data-icon="material-symbols:arrow-forward-ios-rounded" data-width="40"
             data-height="40" data-rotate="90deg"></span>
     </section>
-
-    <div class="bg-gray">
+    <div class="custom-op">
         <section id="about" class="container full-vh d-flex-col-center">
-
+            
             <h2 class="title-section">About</h2>
             <div class="about-desc">
                 <P>My name is Om Chaudhari, Embarking on a journey toward a Bachelor's degree in Information Technology
@@ -105,7 +123,6 @@
             </div>
         </section>
     </div>
-
     <section id="tech-skills" class="container full-vh d-flex-col-center">
         <h2 class="title-section">Skills</h2>
         <div class="micro-cards skill-cards d-flex">
@@ -126,27 +143,33 @@
                 <span>SQL</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://user-images.githubusercontent.com/25181517/117208736-bdedc080-adf5-11eb-912f-61c7d43705f6.png" width="40" height="40">
+                <img src="https://user-images.githubusercontent.com/25181517/117208736-bdedc080-adf5-11eb-912f-61c7d43705f6.png"
+                    width="40" height="40">
                 <span>Oracle</span>
             </div>
-             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png" width="40" height="40">
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img src="https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png"
+                    width="40" height="40">
                 <span>PostgreSQL</span>
             </div>
-             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/82df4543-236b-4e45-9604-5434e3faab17" width="40" height="40">
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/82df4543-236b-4e45-9604-5434e3faab17"
+                    width="40" height="40">
                 <span>SQLite</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png" width="40" height="40">
+                <img src="https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png"
+                    width="40" height="40">
                 <span>mongoDB</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://user-images.githubusercontent.com/25181517/189716855-2c69ca7a-5149-4647-936d-780610911353.png" width="40" height="40">
+                <img src="https://user-images.githubusercontent.com/25181517/189716855-2c69ca7a-5149-4647-936d-780610911353.png"
+                    width="40" height="40">
                 <span>Firebase</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://camo.githubusercontent.com/a7553749f374bd64a02e5141697c24aeb9955ff99bb6de2ef80f4c1b6eb2ad6f/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6865726f6b752f6865726f6b752d69636f6e2e737667" width="40" height="40">
+                <img src="https://camo.githubusercontent.com/a7553749f374bd64a02e5141697c24aeb9955ff99bb6de2ef80f4c1b6eb2ad6f/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6865726f6b752f6865726f6b752d69636f6e2e737667"
+                    width="40" height="40">
                 <span>Heroku</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
@@ -165,8 +188,9 @@
                 <span class="iconify" data-icon="logos:javascript" data-width="40" data-height="40"></span>
                 <span>Javascript</span>
             </div>
-             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png" width="40" height="40">
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png"
+                    width="40" height="40">
                 <span>NodeJs</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
@@ -182,23 +206,28 @@
                 <span>Java</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://camo.githubusercontent.com/2d609418566a429782a470abad1fb6aa1c4f1311a139c0c98fddf16b05bfacc2/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6f70656e63762f6f70656e63762d69636f6e2e737667" width="40" height="40">
+                <img src="https://camo.githubusercontent.com/2d609418566a429782a470abad1fb6aa1c4f1311a139c0c98fddf16b05bfacc2/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6f70656e63762f6f70656e63762d69636f6e2e737667"
+                    width="40" height="40">
                 <span>OpenCV</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://camo.githubusercontent.com/4592b4c82382213c9b29aec5d01698ae1a6f2121747bbeb649e1ec56263f6921/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f5363696b69745f6c6561726e5f6c6f676f5f736d616c6c2e737667" width="40" height="40">
+                <img src="https://camo.githubusercontent.com/4592b4c82382213c9b29aec5d01698ae1a6f2121747bbeb649e1ec56263f6921/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f5363696b69745f6c6561726e5f6c6f676f5f736d616c6c2e737667"
+                    width="40" height="40">
                 <span>sklearn</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://camo.githubusercontent.com/1e72f25c526d43089e8363a10ac4d99eb6e1cf613652c659d77bcdeeda657356/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7079746f7263682f7079746f7263682d69636f6e2e737667" width="40" height="40">
+                <img src="https://camo.githubusercontent.com/1e72f25c526d43089e8363a10ac4d99eb6e1cf613652c659d77bcdeeda657356/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7079746f7263682f7079746f7263682d69636f6e2e737667"
+                    width="40" height="40">
                 <span>PyTorch</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://camo.githubusercontent.com/9fd2f327a5cbb4cc78b8d2ec991eba5b1fd1f9bf06a3f52904da58e6ff18361e/68747470733a2f2f736561626f726e2e7079646174612e6f72672f5f696d616765732f6c6f676f2d6d61726b2d6c6967687462672e737667" width="40" height="40">
+                <img src="https://camo.githubusercontent.com/9fd2f327a5cbb4cc78b8d2ec991eba5b1fd1f9bf06a3f52904da58e6ff18361e/68747470733a2f2f736561626f726e2e7079646174612e6f72672f5f696d616765732f6c6f676f2d6d61726b2d6c6967687462672e737667"
+                    width="40" height="40">
                 <span>Seaborn</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://user-images.githubusercontent.com/25181517/223639822-2a01e63a-a7f9-4a39-8930-61431541bc06.png" width="40" height="40">
+                <img src="https://user-images.githubusercontent.com/25181517/223639822-2a01e63a-a7f9-4a39-8930-61431541bc06.png"
+                    width="40" height="40">
                 <span>TensorFlow</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
@@ -206,26 +235,28 @@
                 <span>Git</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png" width="40" height="40">
+                <img src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png"
+                    width="40" height="40">
                 <span>Github</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://github.com/marwin1991/profile-technology-icons/assets/76662862/2481dc48-be6b-4ebb-9e8c-3b957efe69fa" width="40" height="40">
+                <img src="https://github.com/marwin1991/profile-technology-icons/assets/76662862/2481dc48-be6b-4ebb-9e8c-3b957efe69fa"
+                    width="40" height="40">
                 <span>Linux</span>
             </div>
-             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" width="40" height="40">
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png"
+                    width="40" height="40">
                 <span>VSCode</span>
             </div>
-             <div class="micro-card skill-card d-flex-col-center hover">
-                 <img src="https://user-images.githubusercontent.com/25181517/183914128-3fc88b4a-4ac1-40e6-9443-9a30182379b7.png" width="40" height="40">
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img src="https://user-images.githubusercontent.com/25181517/183914128-3fc88b4a-4ac1-40e6-9443-9a30182379b7.png"
+                    width="40" height="40">
                 <span>Jupyter</span>
             </div>
         </div>
-
     </section>
-
-    <div class="bg-gray">
+    <div class="">
         <section id="projects" class="container full-vh d-flex-col-center">
             <h2 class="title-section">Projects</h2>
             <div class="cards project-cards d-flex">
@@ -292,17 +323,18 @@
                     <img class="card-thumbnail" src="./images/img5.jpg" alt="Img not found" loading="lazy">
                     <section class="card-body d-flex-col">
                         <h3 class="card-title">Student-Marks-model</h3>
-                        <p class="card-desc">It predict the Student's Performance with accuracy of 98.8% ,<span style="background-color: greenyellow; color: black;">ML model</span></p>
+                        <p class="card-desc">It predict the Student's Performance with accuracy of 98.8% ,<span
+                                style="background-color: greenyellow; color: black;">ML model</span></p>
                         <div class="card-footer d-flex space-between">
                             <span class="card-tag">open-source</span>
-                            <a class="project-link d-flex" href="https://github.com/omchaudhari1107/Student-Performance-model"
+                            <a class="project-link d-flex"
+                                href="https://github.com/omchaudhari1107/Student-Performance-model"
                                 target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
                                     data-width="24" data-height="24"></span></a>
                         </div>
                     </section>
                 </div>
             </div>
-
         </section>
     </div>
     <div class="bg-black">
@@ -328,10 +360,16 @@
         </section>
     </div>
 
-    <footer class="d-flex-col-center footer">
+    <footer class="bg-gray d-flex-col-center footer">
         <span>Build with <span class="heart-icon">💗</span> by Om Chaudhari</span>
     </footer>
     <script>
+        tsParticles.load({
+            id: "tsparticles",
+            options: {
+                preset: "seaAnemone",
+            },
+        });
         document.querySelectorAll(".menu-item").forEach(elem => {
             elem.addEventListener("click", () => {
                 document.querySelector('#open-close-menu').checked = false;
