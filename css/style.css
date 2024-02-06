@@ -14,7 +14,15 @@
 ::selection {
     color: rgb(255, 255, 255);
     background: rgb(0, 162, 255);
-  }
+}
+.about-card{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-gray);
+    border-radius:50px ;
+    padding: 5%; 
+}
 .live {
     border: 1px solid rgb(0, 140, 255);
     color: rgb(0, 140, 255);
@@ -296,8 +304,7 @@ p, label {
 }
 
 .about-desc>p:hover {
-    color: #FFFFFE;
-    transform: scale(1.1);
+    color: #ffffff;
 }
 
 .hover {
