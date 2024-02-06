@@ -27,7 +27,6 @@
     border: 1px solid rgb(0, 140, 255);
     color: rgb(0, 140, 255);
     background-color: transparent;
-    /* padding: 0.6rem 1rem; */
     text-align: center;
     border-radius: 2em;
     width: 27%;
@@ -223,8 +222,10 @@ p, label {
 }
 
 .iam-job {
+    color: yellow;
     font-size: 3.2rem;
-    color: var(--color-green);
+    background-color: rgb(0, 153, 255);
+    border-radius: 5px;
 }
 
 .arrow-icon {

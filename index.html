@@ -23,9 +23,6 @@
         src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-sea-anemone@3/tsparticles.preset.seaAnemone.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.3/src/app/ci.min.css" />
     <style>
-        #custom-op #tsparticles {
-            opacity: 0.7;
-        }
 
         #tsparticles {
             /* position: absolute; */
@@ -33,12 +30,13 @@
             width: 100%;
             height: 100%;
             z-index: -100;
-            opacity: 0.5;
+            opacity: 0.7;
             /* Set the desired z-index value */
 
         }
 
         .typed-cursor {
+            color: yellow;
             font-weight: bolder;
             font-size: xx-large;
         }
@@ -69,7 +67,7 @@
 
     <section id="home" class="container full-vh d-flex-col-center">
         <div class="presentation">
-            <span class="hi">Hello there!👋</span>
+            <span class="hi">Hello there!<span style="font-size: 40px;">👋</span></span>
             <h1 id="iam">Om Chaudhari</h1>
             <span id="iama">-I am a</span>&nbsp;&nbsp;<span class="multiple-filed iam-job"></span>
         </div>
