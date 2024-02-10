@@ -41,8 +41,9 @@
 
 <body class="bg-dark">
     <div class="topbar-fixed bg-dark">
-        <header class="container topbar d-flex space-between bg-dark custom">
-            <input type="checkbox" name="open-close-menu" id="open-close-menu" hidden>
+        <header class="container topbar d-flex bg-dark custom">
+            <input type="checkbox" name="open-close-menu" id="open-close-menu" class="op" hidden>
+            <!-- <input type="checkbox"  id="" class="op" hidden> -->
             <label for="open-close-menu" class="menu-icon">
                 <span class="bar-1"></span>
                 <span class="bar-2"></span>
@@ -58,8 +59,18 @@
                     <li class="menu-item"><a href="#links">Links</a></li>
                 </ul>
             </nav>
+            <li class="menu-item">
+                <img width="35" height="35" id="modeSwitch-d" class="Mode moon" style="display: none;"
+                    src="https://img.icons8.com/external-others-amoghdesign/24/external-dark-multimedia-solid-30px-others-amoghdesign.png"
+                    alt="moon-icon" />
+
+                <img width="35" height="35" id="modeSwitch-l" class="Mode sun"
+                    src="https://img.icons8.com/ios/50/FFFFFF/sun--v1.png" alt="sun-icon" />
+            </li>
+
         </header>
     </div>
+
 
     <section id="home" class="container full-vh d-flex-col-center">
         <div class="presentation">
@@ -68,7 +79,7 @@
             <span id="iama">-I am a</span>&nbsp;&nbsp;<span class="multiple-filed iam-job"></span>
         </div>
         <div class="presentation1">
-            <img class="avatar" src="./images/grin smile.jpg" alt="Img.." loading="lazy">
+            <img class="avatar" src="./images/download.png" alt="Img.." loading="lazy">
         </div>
 
         <span class="iconify arrow-icon" data-icon="material-symbols:arrow-forward-ios-rounded" data-width="40"
@@ -119,7 +130,8 @@
                             <h5 class="certi-title">NPTLE</h5>
                             <p class="card-desc">Python for DS</p>
                             <div class="space-between d-flex-col-center">
-                                <a href="https://drive.google.com/file/d/16LvSwgD_UABhxvnf3Vrs-KqcclPLe_SC/view?usp=drivesdk" target="_blank"><button class="button button1">Verified</button></a>
+                                <a href="https://drive.google.com/file/d/16LvSwgD_UABhxvnf3Vrs-KqcclPLe_SC/view?usp=drivesdk"
+                                    target="_blank"><button class="button button1">Verified</button></a>
                             </div>
                         </section>
                     </div>
@@ -128,7 +140,8 @@
                             <h5 class="certi-title">HackerRank</h5>
                             <p class="card-desc">Python(Basic)</p>
                             <div class="space-between d-flex-col-center">
-                                <a href="https://www.hackerrank.com/certificates/71b85e50223b" target="_blank"><button class="button button1">Verified</button></a>
+                                <a href="https://www.hackerrank.com/certificates/71b85e50223b" target="_blank"><button
+                                        class="button button1">Verified</button></a>
                             </div>
                         </section>
                     </div>
@@ -137,7 +150,8 @@
                             <h5 class="certi-title">Simplilearn</h5>
                             <p class="card-desc">Django🤤</p>
                             <div class="space-between d-flex-col-center">
-                                <a href="https://simpli.app.link/pG2lS6yC0Gb" target="_blank"><button class="button button1">Verified</button></a>
+                                <a href="https://simpli.app.link/pG2lS6yC0Gb" target="_blank"><button
+                                        class="button button1">Verified</button></a>
                             </div>
                         </section>
                     </div>
@@ -450,6 +464,28 @@
         <span>Build with <span class="heart-icon">💗</span> by Om Chaudhari</span>
     </footer>
     <script>
+        document.getElementById('modeSwitch-l').addEventListener('click', togglelightMode);
+        document.getElementById('modeSwitch-d').addEventListener('click', toggleDarkMode);
+        function togglelightMode() {
+            const body = document.body;
+            document.querySelector(".moon").style.display='inline';
+            document.querySelector('.sun').style.display='none';
+            body.classList.add('light-mode');
+            body.classList.remove('dark-mode');
+        }
+        function toggleDarkMode() {
+            const body = document.body;
+            document.querySelector(".sun").style.display='inline';
+            document.querySelector('.moon').style.display='none';
+            body.classList.add('dark-mode');
+            body.classList.remove('light-mode');
+        }
+
+
+
+
+
+        // Event listener for the mode switch button
         tsParticles.load({
             id: "tsparticles",
             options: {
