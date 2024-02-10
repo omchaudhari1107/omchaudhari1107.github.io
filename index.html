@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script
@@ -60,12 +61,10 @@
                 </ul>
             </nav>
             <li class="menu-item">
-                <img width="35" height="35" id="modeSwitch-d" class="Mode moon" style="display: none;"
-                    src="https://img.icons8.com/external-others-amoghdesign/24/external-dark-multimedia-solid-30px-others-amoghdesign.png"
-                    alt="moon-icon" />
 
-                <img width="35" height="35" id="modeSwitch-l" class="Mode sun"
-                    src="https://img.icons8.com/ios/50/FFFFFF/sun--v1.png" alt="sun-icon" />
+                <i class="bi bi-moon moon" id="modeSwitch-d"
+                    style="display: none; color: black; font-size: 30px; font-weight: bolder;margin-left: 10px;"></i>
+                <i class="bi bi-brightness-high sun" id="modeSwitch-l" style="font-size: 30px; margin-left: 10px;"></i>
             </li>
 
         </header>
@@ -464,28 +463,7 @@
         <span>Build with <span class="heart-icon">💗</span> by Om Chaudhari</span>
     </footer>
     <script>
-        document.getElementById('modeSwitch-l').addEventListener('click', togglelightMode);
-        document.getElementById('modeSwitch-d').addEventListener('click', toggleDarkMode);
-        function togglelightMode() {
-            const body = document.body;
-            document.querySelector(".moon").style.display='inline';
-            document.querySelector('.sun').style.display='none';
-            body.classList.add('light-mode');
-            body.classList.remove('dark-mode');
-        }
-        function toggleDarkMode() {
-            const body = document.body;
-            document.querySelector(".sun").style.display='inline';
-            document.querySelector('.moon').style.display='none';
-            body.classList.add('dark-mode');
-            body.classList.remove('light-mode');
-        }
 
-
-
-
-
-        // Event listener for the mode switch button
         tsParticles.load({
             id: "tsparticles",
             options: {
@@ -496,7 +474,7 @@
             elem.addEventListener("click", () => {
                 document.querySelector('#open-close-menu').checked = false;
             })
-        });
+        });        
     </script>
 
     <script src="./script/typed.js"></script>
