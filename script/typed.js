@@ -10,7 +10,7 @@ var typed = new Typed('.multiple-filed', options);
 
 document.getElementById('modeSwitch-l').addEventListener('click', toggleLightMode);
 document.getElementById('modeSwitch-d').addEventListener('click', toggleDarkMode);
-
+val = document.getElementById('img').src
 function toggleLightMode() {
   const body = document.body;
   document.querySelector(".moon").style.display = 'inline';

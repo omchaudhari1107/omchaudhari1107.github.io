@@ -59,8 +59,13 @@
 
 .light-mode .micro-cards .skill-card {
     background-color: var(--color-eye);
-    transition: all 0.3s ease-in-out;
+    transition: background-color 1s ease-in-out;
     color: var(--color-gray);
+}
+.light-mode .micro-cards .skill-card:hover {
+    transition: all 0.4s ease;
+    color: var(--color-dark);
+    font-weight: bold;
 }
 .light-mode .project-card {
     background-color: var(--color-eye);
@@ -68,30 +73,35 @@
     color: black;
 }
 .light-mode .project-card{
-    transition: all 0.3s ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 .light-mode .project-card a {
     color: black;
 }
 .light-mode .micro-cards a {
     background-color: var(--color-eye);
-    transition: all 0.3s ease-in-out;
+    transition: all 300ms ease-in-out;
     color: black;
 }
 .light-mode .micro-cards a:hover{
     background-color: var(--color-eye);
-    font-weight: normal;
+    font-weight: bold;
+    /* font-weight: normal; */
 
+}
+.light-mode .certi-card p:hover{
+    color: var(--color-light-gray);
 }
 .light-mode .footer {
     background-color: var(--color-eye);
-    transition: background-color 1s ease-in-out;
+    transition: all 1s ease-in-out;
     color: black;
 
 }
 
 .light-mode .presentation1 .avatar {
     border: 0.5rem solid var(--color-eye);
+    transition: all 1s ease-in-out;
 }
 .light-mode .menu-icon{
     padding: 10px;
@@ -106,12 +116,12 @@
 
 .dark-mode .topbar-fixed {
     background-color: var(--color-dark);
-    transition: background-color 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .dark-mode .topbar {
     background-color: var(--color-dark);
-    transition: background-color 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .dark-mode .menu-item a {
@@ -120,29 +130,27 @@
 
 .dark-mode .menu-item a:hover {
     color: var(--color-white);
-    transition: all 0.25s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .dark-mode .about-card {
     background-color: var(--color-gray);
-    transition: background-color 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .dark-mode .about-card p {
     transform: all 1s ease;
 }
 
-.dark-mode .about-card p:hover {
-    color: white;
-}
 
 .dark-mode .micro-cards .skill-card {
     background-color: var(--color-gray);
     color: var(--color-white);
-    transition: all 0.3s ease;
+    transition: background-color 1s ease;
 }
 
 .dark-mode .micro-cards .skill-card:hover {
+    transition: all 0.3s ease;
     background-color: var(--color-white);
     color: var(--color-dark);
     font-weight: bold;
@@ -153,12 +161,12 @@
 .dark-mode .project-card {
     background-color: var(--color-dark);
     color: white;
-    transform: scale(1);
-    transition: all 300ms ease-in-out;
+    /* transform: scale(1.08); */
+    transition: all 400ms ease-in-out;
 }
 
 .dark-mode .project-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .dark-mode .project-card a {
@@ -167,12 +175,12 @@
 
 .dark-mode .micro-cards a {
     background-color: var(--color-gray);
-    transition: background-color 1s ease-in-out;
+    transition: all 250ms ease-in-out;
     color: white;
 }
 .dark-mode .micro-cards a {
     background-color: var(--color-gray);
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
     color: white;
 }
 .dark-mode .micro-cards a:hover{
@@ -183,14 +191,23 @@
 }
 .dark-mode .footer {
     background-color: var(--color-gray);
-    transition: background-color 1s ease-in-out;
+    transition: all 1s ease-in-out;
     color: white;
 }
 
 .dark-mode .presentation1 .avatar {
     border: 0.5rem solid var(--color-gray);
 }
+.dark-mode .hover {
+    transition: all 0.3s ease;
+}
 
+.dark-mode .hover:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: #16161A;
+    font-weight: bold;
+}
 /* *********************************************** */
 
 
@@ -230,7 +247,8 @@
 }
 
 .button1:hover {
-    border-radius: 5px;
+    border: none;
+    border-radius: 20px;
     background-color: #04AA6D;
     color: white;
     border: 2px solid var(--color-light-gray);
@@ -599,7 +617,7 @@ p, label {
     background-color: var(--color-dark);
     padding: 0.8rem 0.8rem 1.6rem 0.8rem;
     border-radius: 1.6rem;
-    transition: all 300ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 .card:hover {
