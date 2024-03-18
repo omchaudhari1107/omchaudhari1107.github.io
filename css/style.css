@@ -98,7 +98,6 @@
     color: black;
 
 }
-
 .light-mode .presentation1 .avatar {
     border: 0.5rem solid var(--color-eye);
     transition: all 1s ease-in-out;
@@ -108,12 +107,19 @@
     background-color: #16161A;
     border-radius: 50%;
 }
+.light-mode .box{
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+
+}
 /* *********************************************** */
 /* *********************************************** */
 .dark-mode {
     color: var(--color-dark);
 }
+.dark-mode .box{
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
 
+}
 .dark-mode .topbar-fixed {
     background-color: var(--color-dark);
     transition: all 1s ease-in-out;
@@ -218,7 +224,13 @@
     /* position: absolute; */
     /* right: 0; */
 }
+.box{
+    border-radius:10px ;
+    /* border: 1px solid white; */
+    padding-left: 7px;
+    padding-right: 7.5px;
 
+}
 .certi-title {
     color: var(--color-gray);
 }
