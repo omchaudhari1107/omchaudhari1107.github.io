@@ -229,6 +229,7 @@
     /* border: 1px solid white; */
     padding-left: 7px;
     padding-right: 7.5px;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
 
 }
 .certi-title {
