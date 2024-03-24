@@ -11,7 +11,26 @@
     --color-eye: rgb(255, 255, 231);
     --gap: 2.4rem
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #555; 
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 162, 255); 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 162, 255); 
+  } */
 ::selection {
     color: rgb(255, 255, 255);
     background: rgb(0, 162, 255);
@@ -553,7 +572,7 @@ p, label {
     }
 }
 .custom {
-    padding: 5px;
+    padding: 7px;
     display: flex;
     width: 100%;
     align-items: center;
