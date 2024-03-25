@@ -519,21 +519,20 @@ p, label {
 
 .act {
     border-radius: 0%;
-    border-bottom: 5px solid rgb(0, 255, 255);
-    animation: under 1s ease-in-out infinite;
+    animation: under 1s ease infinite;
 }
 
 @keyframes under {
     0% {
-        border-bottom: 5px solid rgb(0, 255, 255);
+        border-bottom: 3px solid rgb(0, 255, 255);
     }
 
     50% {
-        border-bottom: 5px solid rgb(200, 255, 0);
+        border-bottom: 3px solid rgb(255, 251, 0);
     }
 
     100% {
-        border-bottom: 5px solid rgb(0, 255, 255);
+        border-bottom: 3px solid rgb(0, 255, 255);
     }
 }
 
