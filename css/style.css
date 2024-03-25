@@ -11,24 +11,25 @@
     --color-eye: rgb(255, 255, 231);
     --gap: 2.4rem
 }
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #555; 
+    background: #555;
     border-radius: 20px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(0, 162, 255); 
+    background: rgb(0, 162, 255);
     border-radius: 20px;
-  }
-  
-  /* Handle on hover */
-  /* ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
     background: rgb(0, 162, 255); 
   } */
 ::selection {
@@ -81,64 +82,78 @@
     transition: background-color 1s ease-in-out;
     color: var(--color-gray);
 }
+
 .light-mode .micro-cards .skill-card:hover {
     transition: all 0.4s ease;
     color: var(--color-dark);
     font-weight: bold;
 }
+
 .light-mode .project-card {
     background-color: var(--color-eye);
     transition: background-color 1s ease-in-out;
     color: black;
 }
-.light-mode .project-card{
+
+.light-mode .project-card {
     transition: all 400ms ease-in-out;
 }
+
 .light-mode .project-card a {
     color: black;
 }
+
 .light-mode .micro-cards a {
     background-color: var(--color-eye);
     transition: all 300ms ease-in-out;
     color: black;
 }
-.light-mode .micro-cards a:hover{
+
+.light-mode .micro-cards a:hover {
     background-color: var(--color-eye);
     font-weight: bold;
     /* font-weight: normal; */
 
 }
-.light-mode .certi-card p:hover{
+
+.light-mode .certi-card p:hover {
     color: var(--color-light-gray);
 }
+
 .light-mode .footer {
     background-color: var(--color-eye);
     transition: all 1s ease-in-out;
     color: black;
 
 }
+
 .light-mode .presentation1 .avatar {
     border: 0.5rem solid var(--color-eye);
     transition: all 1s ease-in-out;
 }
-.light-mode .menu-icon{
+
+.light-mode .menu-icon {
     padding: 10px;
     background-color: #16161A;
     border-radius: 50%;
 }
-.light-mode .box{
+
+.light-mode .box {
     box-shadow: rgb(0, 0, 0) 0px 5px 15px;
 
 }
+
 /* *********************************************** */
 /* *********************************************** */
 .dark-mode {
     color: var(--color-dark);
 }
-.dark-mode .box{
+
+.dark-mode .box {
     box-shadow: rgb(255, 255, 255) 0px 5px 15px;
 
 }
+
 .dark-mode .topbar-fixed {
     background-color: var(--color-dark);
     transition: all 1s ease-in-out;
@@ -203,17 +218,20 @@
     transition: all 250ms ease-in-out;
     color: white;
 }
+
 .dark-mode .micro-cards a {
     background-color: var(--color-gray);
     transition: all 1s ease-in-out;
     color: white;
 }
-.dark-mode .micro-cards a:hover{
+
+.dark-mode .micro-cards a:hover {
     background-color: var(--color-white);
     color: black;
     font-weight: bold;
 
 }
+
 .dark-mode .footer {
     background-color: var(--color-gray);
     transition: all 1s ease-in-out;
@@ -223,6 +241,7 @@
 .dark-mode .presentation1 .avatar {
     border: 0.5rem solid var(--color-dark);
 }
+
 .dark-mode .hover {
     transition: all 0.3s ease;
 }
@@ -233,6 +252,7 @@
     color: #16161A;
     font-weight: bold;
 }
+
 /* *********************************************** */
 
 
@@ -243,14 +263,16 @@
     /* position: absolute; */
     /* right: 0; */
 }
-.box{
-    border-radius:10px ;
+
+.box {
+    border-radius: 10px;
     /* border: 1px solid white; */
     padding-left: 7px;
     padding-right: 7.5px;
     box-shadow: rgb(255, 255, 255) 0px 5px 15px;
 
 }
+
 .certi-title {
     color: var(--color-gray);
 }
@@ -495,6 +517,26 @@ p, label {
     color: var(--color-white);
 }
 
+.act {
+    border-radius: 0%;
+    border-bottom: 5px solid rgb(0, 255, 255);
+    animation: under 1s ease-in-out infinite;
+}
+
+@keyframes under {
+    0% {
+        border-bottom: 5px solid rgb(0, 255, 255);
+    }
+
+    50% {
+        border-bottom: 5px solid rgb(200, 255, 0);
+    }
+
+    100% {
+        border-bottom: 5px solid rgb(0, 255, 255);
+    }
+}
+
 .hi {
     display: block;
     font-size: 2.4rem;
@@ -542,11 +584,14 @@ p, label {
     margin-top: 7rem;
     width: 50rem;
     border-radius: 50%;
-    padding: 1rem;
-    animation: ani 10s infinite;
     border: 0.5rem solid var(--color-dark);
-    background: rgb(0,215,255);
-background: radial-gradient(circle, rgba(255,252,0,1) 20%,rgba(0,215,255,1)  100%);
+    background: radial-gradient(circle, rgba(255, 252, 0, 1) 20%, rgba(0, 215, 255, 1) 100%);
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 
@@ -723,6 +768,7 @@ background: radial-gradient(circle, rgba(255,252,0,1) 20%,rgba(0,215,255,1)  100
 }
 
 @media (max-width: 768px) {
+    
     h1 {
         font-size: 6.4rem;
     }
@@ -777,7 +823,7 @@ background: radial-gradient(circle, rgba(255,252,0,1) 20%,rgba(0,215,255,1)  100
     }
 
     .menu-item a {
-        padding: 1.6rem;
+        padding: 1.3rem;
     }
 }
 
