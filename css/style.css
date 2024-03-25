@@ -221,7 +221,7 @@
 }
 
 .dark-mode .presentation1 .avatar {
-    border: 0.5rem solid var(--color-gray);
+    border: 0.5rem solid var(--color-dark);
 }
 .dark-mode .hover {
     transition: all 0.3s ease;
@@ -274,16 +274,15 @@
 .button1 {
     background-color: var(--color-eye);
     color: var(--color-light-gray);
-    border: 2px solid var(--color-light-gray);
+    border: 1px solid var(--color-light-gray);
     border-radius: 20px;
 }
 
 .button1:hover {
-    border: none;
+    /* border: none; */
     border-radius: 20px;
     background-color: #04AA6D;
     color: white;
-    border: 2px solid var(--color-light-gray);
 }
 
 .certi-card {
@@ -543,34 +542,14 @@ p, label {
     margin-top: 7rem;
     width: 50rem;
     border-radius: 50%;
-    border: 0.5rem solid var(--color-green);
     padding: 1rem;
-    transition: all 2s ease-in-out;
-    animation: ani 10s ease-in-out infinite;
-    border: 0.5rem solid var(--color-gray);
+    animation: ani 10s infinite;
+    border: 0.5rem solid var(--color-dark);
+    background: rgb(0,215,255);
+background: radial-gradient(circle, rgba(255,252,0,1) 20%,rgba(0,215,255,1)  100%);
 }
 
-@keyframes ani {
-    0% {
-        transform: scale(1);
-        background-color: rgb(76, 0, 255);
-    }
-    
-    25% {
-        transform: scale(1.1);
-        background-color: rgb(0, 162, 255);
-    }
-    
-    75% {
-        transform: scale(1.2);
-        background-color: rgb(174, 0, 255);
-    }
-    
-    100% {
-        transform: scale(1);
-        background-color: rgb(76, 0, 255);
-    }
-}
+
 .custom {
     padding: 7px;
     display: flex;
@@ -615,7 +594,7 @@ p, label {
 
 .micro-card {
     color: var(--color-white);
-    background-color: var(--color-gray);
+    background-color: var(--color-dark);
 
     width: 12rem;
     height: 12rem;
