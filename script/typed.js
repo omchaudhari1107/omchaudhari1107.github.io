@@ -1,5 +1,5 @@
 var options = {
-  strings: ["Python Dev<i style='background-color:white;border-radius:100%; margin-bottom:-9.5px; padding:5px;' class='ci ci-python ci-4x'></i>", "Django Dev<i style='background-color:white;border-radius:100%; margin-bottom:-9.5px; padding:5px;' class='ci ci-django ci-4x'></i>", "ML Dev🤖"],
+  strings: ["Python Dev🐍", "Django Dev😋", "ML Dev🤖"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 2000,
