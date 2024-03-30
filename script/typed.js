@@ -28,18 +28,14 @@ var typed = new Typed('.multiple-filed', options);
 // }
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Get all menu items
   var menuItems = document.querySelectorAll('.menu-item');
 
-  // Loop through the menu items and add click event listener
   for (var i = 0; i < menuItems.length; i++) {
       menuItems[i].addEventListener("click", function() {
-          // Remove "active" class from the previously active menu item
           var currentActive = document.querySelector('.menu-item.act');
           if (currentActive) {
               currentActive.classList.remove("act");
           }
-          // Add "active" class to the clicked menu item
           this.classList.add("act");
       });
   }
