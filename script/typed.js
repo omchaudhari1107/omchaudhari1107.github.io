@@ -1,8 +1,8 @@
 var options = {
-  strings: ["Full-Stack Dev", "Learner🔍", "Django Dev❤️", "Programmer🔥", "ML Dev🤖"],
+  strings: ["Python Dev<i style='background-color:white;border-radius:100%; margin-bottom:-9.5px; padding:5px;' class='ci ci-python ci-4x'></i>", "Django Dev<i style='background-color:white;border-radius:100%; margin-bottom:-9.5px; padding:5px;' class='ci ci-django ci-4x'></i>", "ML Dev🤖"],
   typeSpeed: 100,
   backSpeed: 100,
-  backDelay: 1000,
+  backDelay: 2000,
   loop: true
 };
 

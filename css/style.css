@@ -15,7 +15,13 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-
+.link{
+    color: aqua;
+    transition: all .5 ease;
+}
+.link:hover{
+    color:rgb(0, 172, 172);
+}
 /* Track */
 ::-webkit-scrollbar-track {
     background: #555;
@@ -698,7 +704,7 @@ p, label {
 .card-desc {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -706,6 +712,8 @@ p, label {
 .card-footer {
     margin-top: 1.6rem;
     align-items: center;
+    bottom: 0;
+    position: relative;
 }
 
 .card-tag {
