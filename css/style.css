@@ -811,7 +811,9 @@ label {
 }
 
 @media (max-width: 768px) {
-
+    #git{
+        display: none;
+    }
     h1 {
         font-size: 6.4rem;
     }
