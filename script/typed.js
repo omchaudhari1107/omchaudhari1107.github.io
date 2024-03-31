@@ -29,10 +29,11 @@ var typed = new Typed('.multiple-filed', options);
 
 document.addEventListener("DOMContentLoaded", function() {
   var menuItems = document.querySelectorAll('.menu-item');
-
+  // menuItems
   for (var i = 0; i < menuItems.length; i++) {
       menuItems[i].addEventListener("click", function() {
           var currentActive = document.querySelector('.menu-item.act');
+          console.log(menuItems[i])
           if (currentActive) {
               currentActive.classList.remove("act");
           }

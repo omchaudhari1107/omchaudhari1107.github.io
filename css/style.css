@@ -11,52 +11,48 @@
     --color-eye: rgb(255, 255, 231);
     --gap: 2.4rem
 }
-.highlight-red {
-    border-radius: 1em 0 1em 0;
-    background-image: linear-gradient(
-      -100deg,
-      rgba(255, 20, 0, 0.2),
-      rgba(255, 20, 0, 0.7) 95%,
-      rgba(255, 20, 0, 0.1)
-    );
-  }
-  .highlight-yellow {
-    border-radius: 1em 0 1em 0;
-    background-image: linear-gradient(
-      -100deg,
-      rgba(255, 224, 0, 0.2),
-      rgba(255, 224, 0, 0.7) 95%,
-      rgba(255, 224, 0, 0.1)
-    );
-  }
-  .highlight-green {
-    border-radius: 1em 0 1em 0;
-    background-image: linear-gradient(
-      -100deg,
-      rgba(0, 255, 20, 0.2),
-      rgba(0, 255, 20, 0.7) 95%,
-      rgba(0, 255, 20, 0.1)
-    );
-  }
-  .highlight-blue {
-    border-radius: 1em 0 1em 0;
-    background-image: linear-gradient(
-      -100deg,
-      rgba(0, 20, 255, 0.2),
-      rgba(0, 217, 255, 0.7) 95%,
-      rgba(0, 20, 255, 0.1)
-    );
-  }
+
+.btn {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid white;
+    padding: 10px 15px;
+    font-size: medium;
+    background-color: var(--color-gray);
+    color: rgb(255, 255, 255);
+    border-radius: 1.6rem;
+    font-weight: bolder;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    scale: 1.1;
+    /* border-radius: 0px; */
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    /* border: none; */
+}
+
+.highlight-green {
+    background-color: rgba(183, 255, 0, 0.9);
+}
+
+.highlight-blue {
+    background-color: rgb(0, 255, 221,.9);
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
-.link{
+
+.link {
     color: aqua;
     transition: all .5 ease;
 }
-.link:hover{
-    color:rgb(0, 172, 172);
+
+.link:hover {
+    color: rgb(0, 172, 172);
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: #555;
@@ -404,8 +400,13 @@
 }
 
 
-#cv {
-    font-size: x-large;
+#Capa_1 {
+    fill: white;
+    transition: fill 0.3s ease; 
+}
+
+.cv:hover #Capa_1 {
+    fill: black;
 }
 
 .presentation {
@@ -464,7 +465,8 @@ h6 {
     font-size: 1.6rem;
 }
 
-p, label {
+p,
+label {
     font-size: 1.6rem;
     color: var(--color-light-gray);
 }
@@ -582,7 +584,8 @@ p, label {
     font-size: 2.4rem;
 }
 
-.hi, .iam-job {
+.hi,
+.iam-job {
     font-weight: 400;
 }
 
@@ -811,7 +814,7 @@ p, label {
 }
 
 @media (max-width: 768px) {
-    
+
     h1 {
         font-size: 6.4rem;
     }
@@ -828,7 +831,9 @@ p, label {
 
     }
 
-    .bar-1, .bar-2, .bar-3 {
+    .bar-1,
+    .bar-2,
+    .bar-3 {
         display: block;
         background-color: var(--color-white);
         width: 4rem;

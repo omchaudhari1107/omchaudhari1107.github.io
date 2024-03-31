@@ -1,4 +1,4 @@
-document.querySelector(".download").addEventListener("click", function () {
+document.querySelector(".btn").addEventListener("click", function () {
   alert('Check CV on laptop for certifications links.')
   var cvUrl = './Om_Chaudhari_CV.pdf';
   var link = document.createElement("a");
