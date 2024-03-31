@@ -63,10 +63,7 @@
     border-radius: 20px;
 }
 
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-    background: rgb(0, 162, 255); 
-  } */
+
 ::selection {
     color: rgb(255, 255, 255);
     background: rgb(0, 162, 255);
@@ -74,13 +71,10 @@
 
 .Mode {
     margin: 0px 10px;
-    /* position: absolute; */
-    /* right: 0; */
 }
 
 .box {
     border-radius: 10px;
-    /* border: 1px solid white; */
     padding-left: 7px;
     padding-right: 7.5px;
     box-shadow: rgb(255, 255, 255) 0px 5px 15px;
@@ -109,21 +103,21 @@
 
 .button1 {
     background-color: var(--color-eye);
-    color: var(--color-light-gray);
-    border: 1px solid var(--color-light-gray);
+    border: 1px solid var(--color-eye);
     border-radius: 20px;
+    font-weight: bolder;
+    background-color: var(--color-dark);
+    color: var(--color-white);
 }
 
 .button1:hover {
-    /* border: none; */
     border-radius: 20px;
-    background-color: #04AA6D;
-    color: white;
+    background-color: var(--color-eye);
+    color: rgb(0, 0, 0);
 }
 
 .certi-card {
     width: 20rem;
-
     max-height: 20rem;
     background-color: var(--color-eye);
     padding: 0.8rem 0.8rem 1.6rem 0.8rem;
@@ -145,17 +139,17 @@
 .live {
     border: 1px solid rgb(0, 140, 255);
     color: rgb(0, 140, 255);
-    background-color: transparent;
     text-align: center;
-    border-radius: 2em;
+    border-radius: 2rem;
     width: 27%;
-    transition: all 1s ease;
+    padding: 1px 0px;
+    transition: all .3s ease;
 }
 
 .live:hover {
-    background-color: var(--color-green);
+    background-color: rgb(0, 140, 255);
     color: var(--color-white);
-    border: var(--color-green);
+
 }
 
 .blink {
