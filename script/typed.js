@@ -8,24 +8,7 @@ var options = {
 
 var typed = new Typed('.multiple-filed', options);
 
-// document.getElementById('modeSwitch-l').addEventListener('click', toggleLightMode);
-// document.getElementById('modeSwitch-d').addEventListener('click', toggleDarkMode);
-// val = document.getElementById('img').src
-// function toggleLightMode() {
-//   const body = document.body;
-//   document.querySelector(".moon").style.display = 'inline';
-//   document.querySelector('.sun').style.display = 'none';
-//   body.classList.add('light-mode');
-//   body.classList.remove('dark-mode');
-// }
 
-// function toggleDarkMode() {
-//   const body = document.body;
-//   document.querySelector(".sun").style.display = 'inline';
-//   document.querySelector('.moon').style.display = 'none';
-//   body.classList.add('dark-mode');
-//   body.classList.remove('light-mode');
-// }
 
 document.addEventListener("DOMContentLoaded", function() {
   var menuItems = document.querySelectorAll('.menu-item');
