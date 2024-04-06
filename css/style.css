@@ -400,7 +400,6 @@ label {
     border-radius: 50%;
     border: 0.5rem solid var(--color-dark);
     background: radial-gradient(circle, rgba(255, 252, 0, 1) 20%, rgba(0, 215, 255, 1) 100%);
-
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -408,7 +407,20 @@ label {
     -ms-user-select: none;
 }
 
-
+/* .presentation1:hover .avatar{
+    animation: rotateimg 1s linear;
+}
+@keyframes rotateimg{
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(-1);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+} */
 .custom {
     padding: 7px;
     display: flex;
@@ -445,6 +457,25 @@ label {
     background-color: var(--color-eye);
     color: #16161A;
     font-weight: bold;
+    /* animation: rotate 1s linear; */
+}
+
+.hover:hover .rot {
+    animation: rotate .4s linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(-1);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
 }
 
 .micro-cards {
@@ -484,6 +515,7 @@ label {
 }
 
 .card {
+    /* max-height: 32rem; */
     max-width: 32rem;
     background-color: var(--color-dark);
     padding: 0.8rem 0.8rem 1.6rem 0.8rem;
@@ -492,6 +524,8 @@ label {
 }
 
 .card:hover {
+    /* background-color: var(--color-eye);
+    color: var(--color-dark); */
     transform: scale(1.08);
 }
 
