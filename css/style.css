@@ -103,7 +103,7 @@
 
 .button1 {
     background-color: var(--color-eye);
-    border: 1px solid var(--color-eye);
+    border: 2px solid var(--color-eye);
     border-radius: 20px;
     font-weight: bolder;
     background-color: var(--color-dark);
