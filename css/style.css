@@ -372,6 +372,7 @@ label {
     animation: zin 1s infinite;
     position: absolute;
     bottom: 4rem;
+    font-size: x-large;
 }
 
 @keyframes zin {
@@ -380,7 +381,7 @@ label {
     }
 
     50% {
-        transform: scale(1.4);
+        transform: scale(1.2);
         fill: white;
     }
 
