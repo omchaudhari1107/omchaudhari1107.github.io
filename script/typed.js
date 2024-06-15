@@ -1,7 +1,7 @@
 var options = {
-  strings: ["Python Dev🐍", "Django Dev😋", "ML Dev🤖"],
-  typeSpeed: 100,
-  backSpeed: 100,
+  strings: ["Python Dev🐍", "Django Dev", "ML Dev🤖"],
+  typeSpeed: 50,
+  backSpeed: 10,
   backDelay: 2000,
   loop: true
 };

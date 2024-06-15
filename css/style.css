@@ -42,11 +42,13 @@
 }
 
 .highlight-green {
-    background-color: rgba(183, 255, 0, 0.9);
+    border-bottom: 2px solid greenyellow;
+    /* background-color: rgba(183, 255, 0, 0.9); */
 }
 
 .highlight-blue {
-    background-color: rgb(0, 255, 221, .9);
+    border-bottom: 2px solid rgb(0, 255, 221, .9);
+    /* background-color: rgb(0, 255, 221, .9); */
 }
 
 ::-webkit-scrollbar {
@@ -77,7 +79,7 @@
 
 ::selection {
     color: rgb(0, 0, 0);
-    background: rgb(187, 255, 0);
+    background: rgb(0, 229, 255);
     height: 20px;
 }
 
@@ -94,7 +96,7 @@
 }
 
 .certi-title {
-    color: var(--color-gray);
+    color: var(--color-eye);
 }
 
 .button>a {
@@ -373,9 +375,9 @@ label {
 }
 
 .iam-job {
-    color: yellow;
+    color: rgb(0, 183, 255);
     font-size: 3.2rem;
-    background-color: rgb(0, 153, 255);
+    /* background-color: rgb(0, 153, 255); */
     border-radius: 5px;
 }
 
@@ -405,6 +407,7 @@ label {
 .title-section {
     font-size: 3.2rem;
     margin-bottom: 2.4rem;
+    color: var(--color-eye);
 }
 
 .avatar {
@@ -458,7 +461,7 @@ label {
 }
 
 .about-desc>p:hover {
-    color: #ffffff;
+    color: var(--color-eye);
 }
 
 .hover {
@@ -499,8 +502,8 @@ label {
 
 .micro-card {
     color: var(--color-white);
-    background-color: var(--color-dark);
-
+    background-color: var(--color-gray);
+    /* opacity: 10; */
     width: 12rem;
     height: 12rem;
     padding: 1.6rem 2.4rem;
@@ -531,7 +534,7 @@ label {
 .card {
     /* max-height: 32rem; */
     max-width: 32rem;
-    background-color: var(--color-dark);
+    background-color: var(--color-gray);
     padding: 0.8rem 0.8rem 1.6rem 0.8rem;
     border-radius: 1.6rem;
     transition: all 400ms ease-in-out;
