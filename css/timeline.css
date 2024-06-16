@@ -30,12 +30,8 @@
 	cursor: pointer;
 	transition: all 0.4s;
 	margin-bottom: 20px;
-    opacity: 0.6;
-}
-.col .contents .box:hover{
-	/* box-shadow: 0px 3px 12px 0px #ccc; */
-    opacity: 1;
-	/* border: 1px solid transparent; */
+	/* border: 1px solid white; */
+    /* opacity: 0.6; */
 }
 .col .contents .box::before{
 	content: '';
@@ -66,9 +62,11 @@
 @media(max-width:1462px){
     .box{
         flex-direction: column;
+		/* width: 115%; */
     }
     .img{
         margin-left:2% ;
+		text-align: center;
     }
 }
 @media(max-width:637px){
@@ -77,19 +75,7 @@
         font-size: x-large;
     }
     .img{
-        display: none;
-    }
-}
-@media(max-width:513px){
-   
-    h4{
-        font-size: large;
-    }
-    h3{
-        font-size: medium;
-    }
-    h2{
-        font-size: small;
+        /* display: none; */
     }
 }
 @media(max-width: 768px){
@@ -99,4 +85,31 @@
 	.row .col:nth-child(2){
 		margin-top: 30px;
 	}
+}
+@media(max-width:513px){
+   
+    h4{
+        font-size: large;
+    }
+    .box h3{
+        font-size: medium;
+    }
+    .box p{
+        font-size: small;
+    }
+}
+@media(max-width:438px)
+{
+	.img>img{
+		width: 150px;
+	}
+	h4{
+        font-size: small;
+    }
+    .box h3{
+        font-size: small;
+    }
+    .box p{
+        font-size: 10px;
+    }
 }
