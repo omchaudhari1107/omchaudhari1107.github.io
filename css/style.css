@@ -188,7 +188,7 @@
 #Capa_1 {
     fill: var(--color-eye);
     transition: fill 0.3s ease;
-}
+}   d
 .micro-card.link-card.d-flex-col-center.hover {
     display: flex;
 }
