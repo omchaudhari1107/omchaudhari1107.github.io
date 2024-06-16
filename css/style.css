@@ -186,10 +186,22 @@
 
 
 #Capa_1 {
-    fill: white;
+    fill: var(--color-eye);
+    transition: fill 0.3s ease;
+}
+.micro-card.link-card.d-flex-col-center.hover {
+    display: flex;
+}
+
+#icon-eye path {
+    fill: var(--color-eye, #000); /* Default fill color, with fallback */
     transition: fill 0.3s ease;
 }
 
+/* Hover effect to turn icons black when hovering over the containing a tag */
+.micro-card.link-card.d-flex-col-center.hover:hover #icon-eye path {
+    fill: black;
+}
 .cv:hover #Capa_1 {
     fill: black;
 }
