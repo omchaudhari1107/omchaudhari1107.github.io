@@ -7,3 +7,8 @@ document.querySelector(".btn").addEventListener("click", function () {
   link.click();
   document.body.removeChild(link);
 });
+
+function soon(){
+  alert('Coming Soon!!')
+  return()
+}
