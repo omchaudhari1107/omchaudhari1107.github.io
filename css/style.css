@@ -385,11 +385,32 @@ label {
     font-weight: 400;
 }
 
+.typed-python,.typed-js {
+    color: yellow; /* Change to your desired color for Python */
+}
+
+.typed-django {
+    color: #00b421; /* Change to your desired color for Django */
+}
+
+.typed-ml {
+    color: rgb(0, 157, 255); /* Change to your desired color for ML */
+}
+.typed-ds{
+    color: chartreuse;
+}
+.typed-html,.typed-laravel {
+    color: var(--color-red); /* Change to your desired color for ML */
+}
+.typed-css{
+    color: lightskyblue;
+}
+.typed-cursor {
+    font-weight: bolder;
+    font-size: xx-large;
+}
 .iam-job {
-    color: rgb(0, 183, 255);
     font-size: 3.2rem;
-    /* background-color: rgb(0, 153, 255); */
-    border-radius: 5px;
 }
 
 .arrow-icon {

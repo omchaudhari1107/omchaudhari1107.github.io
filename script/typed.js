@@ -1,5 +1,12 @@
 var options = {
-  strings: ["Python Dev🐍", "Django Dev", "ML Dev🤖"],
+  strings: [
+    '<span class="typed-python">Python</span>', 
+    '<span class="typed-django">Django</span>', 
+    '<span class="typed-laravel">Laravel</span>',
+    '<span class="typed-ml">ML</span>',
+    '<span class="typed-ds">DS</span>',
+    '<span class="typed-html">HTML</span>,<span class="typed-css">CSS</span>,<span class="typed-js">JS</span>',
+  ],
   typeSpeed: 50,
   backSpeed: 10,
   backDelay: 2000,
