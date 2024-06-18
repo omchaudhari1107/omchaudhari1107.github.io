@@ -45,6 +45,22 @@
             font-weight: bolder;
             font-size: xx-large;
         }
+        .progress-container {
+            width: 100%;
+            height: 5px;
+            /* border-radius: 100%; */
+            background: transparent;
+            position: fixed;
+            top: 65px;
+            /* bottom: 0; */
+            left: 0;
+            z-index: 99;
+        }
+        .progress-bar {
+            width:0px;
+            height: 100%;    
+            background: #00eeff;
+        }
     </style>
 </head>
 
@@ -79,16 +95,19 @@
                 <i class="bi bi-brightness-high sun box" id="modeSwitch-l"
                     style="font-size: 30px; margin-left: 10px;"></i> -->
             </li>
-
+            
         </header>
     </div>
-
-
+    
+    
     <section id="home" class="container full-vh d-flex-col-center">
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
         <div class="presentation">
             <span class="hi">Hello there (<img src="./images/wave-hello.gif" alt=""
-                    style="width: 2.4em; margin-bottom: -15px;">) I am</span>
-            <h1 id="iam">Om Chaudhari</h1>
+                style="width: 2.4em; margin-bottom: -15px;">) I am</span>
+                <h1 id="iam">Om Chaudhari</h1>
             <span id="iama">-I am nice at</span>&nbsp;&nbsp;<span class="multiple-filed iam-job"></span>
         </div>
         <div class="presentation1">
