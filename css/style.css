@@ -385,15 +385,15 @@ label {
     font-weight: 400;
 }
 
-.typed-python,.typed-js {
+.typed-python,.typed-js,.typed-pbi {
     color: yellow; /* Change to your desired color for Python */
 }
 
-.typed-django {
+.typed-django,.typed-mongo {
     color: #00b421; /* Change to your desired color for Django */
 }
 
-.typed-ml {
+.typed-ml,.typed-sql {
     color: rgb(0, 157, 255); /* Change to your desired color for ML */
 }
 .typed-ds{
