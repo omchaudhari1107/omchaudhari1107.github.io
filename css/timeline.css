@@ -25,9 +25,9 @@
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
-	right: calc(100% + 22px);
+	right: calc(100% + 21px);
 	top: 0;
-	background-color: rgb(255, 255, 231);
+	background-color: #242629;
 	border: 2px solid rgb(255, 255, 231);
 }
 .box h4{
