@@ -56,10 +56,6 @@
 	h4,.box h3{
 		text-align: center;
     }
-	.col{
-		/* margin: 0; */
-		/* width: 100%; */
-	}
 }
 @media(max-width:637px){
     .col{
