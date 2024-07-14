@@ -150,23 +150,23 @@
 }
 
 .live {
-    border: 1px solid rgb(0, 140, 255);
+    border: none;
     color: rgb(0, 140, 255);
     text-align: center;
     border-radius: 2rem;
-    width: 27%;
+    width: fit-content;
     padding: 1px 0px;
     transition: all .3s ease;
 }
 
-.live:hover {
+/* .live:hover {
     background-color: rgb(0, 140, 255);
     color: var(--color-white);
 
-}
+} */
 
 .blink {
-    animation: blinkAnimation 1s infinite;
+    animation: blinkAnimation .7s infinite;
 }
 
 @keyframes blinkAnimation {
@@ -569,18 +569,14 @@ label {
 .card {
     max-height: 16rem;
     width: 32rem;
-    margin:.5%;
+    margin:2px;
     background-color: var(--color-gray);
     padding: 0.8rem 0.8rem 1.6rem 0.8rem;
     border-radius: 1.6rem;
-    transition: all .3s ease-in-out;
+    /* transition: all .3s ease-in-out; */
 }
 
-.card:hover {
-    /* background-color: var(--color-eye);
-    color: var(--color-dark); */
-    transform: scale(1.08);
-}
+
 
 .card-thumbnail {
     width: 30.4rem;
