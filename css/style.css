@@ -11,7 +11,9 @@
     --color-eye: rgb(255, 255, 231);
     --gap: 2.4rem
 }
-
+.spacy{
+    margin-bottom: 10px;
+}
 .hoverimg {
     transition: all .5s ease;
     background: radial-gradient(circle, rgba(255, 252, 0, 1) 20%, rgba(0, 215, 255, 1) 100%);
@@ -157,7 +159,7 @@
     border-radius: 2rem;
     width: fit-content;
     font-size: medium;
-    font-weight: lighter;
+    font-weight: bold;
     padding: 1px 5px;
     transition: all .3s ease;
 }
@@ -165,7 +167,6 @@
 .live:hover {
     background-color: var(--color-eye);
     color: var(--color-dark);
-    font-weight: lighter;
 }
 
 .blink {
