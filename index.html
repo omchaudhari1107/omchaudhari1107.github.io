@@ -46,6 +46,7 @@
             font-size: xx-large; */
             display: none;
         }
+
         .progress-container {
             width: 100%;
             height: 5px;
@@ -57,9 +58,10 @@
             left: 0;
             z-index: 99;
         }
+
         .progress-bar {
-            width:0px;
-            height: 100%;    
+            width: 0px;
+            height: 100%;
             background: rgb(0, 183, 255);
         }
     </style>
@@ -96,19 +98,19 @@
                 <i class="bi bi-brightness-high sun box" id="modeSwitch-l"
                     style="font-size: 30px; margin-left: 10px;"></i> -->
             </li>
-            
+
         </header>
     </div>
-    
-    
+
+
     <section id="home" class="container full-vh d-flex-col-center">
         <div class="progress-container">
             <div class="progress-bar" id="progressBar"></div>
         </div>
         <div class="presentation">
             <span class="hi">Hello there (<img src="./images/wave-hello.gif" alt=""
-                style="width: 2.4em; margin-bottom: -15px;">) I am</span>
-                <h1 id="iam">Om Chaudhari</h1>
+                    style="width: 2.4em; margin-bottom: -15px;">) I am</span>
+            <h1 id="iam">Om Chaudhari</h1>
             <span id="iama">-I am nice at</span>&nbsp;&nbsp;<span class="multiple-filed iam-job"></span>
         </div>
         <div class="presentation1">
@@ -226,8 +228,10 @@
                         PHP and data science techniques. Explored SCADA operations and its architectures. All projects
                         are live and used in the field at ONGC.</p>
                     <div style="margin-top: 5px;">
-                        <a href="https://drive.google.com/file/d/1b5IGBDsfMYH6t5da6VO_diVXwvPMKx2D/view?usp=drive_link" target="_blank"><button class="btn exp-btn">LOR</button></a>
-                        <a href="https://drive.google.com/file/d/1HnevaizcPmI5DE_wvorAqzZt_ZaH4koP/view?usp=drive_link" target="_blank"><button class="btn exp-btn">Certificate</button></a>
+                        <a href="https://drive.google.com/file/d/1b5IGBDsfMYH6t5da6VO_diVXwvPMKx2D/view?usp=drive_link"
+                            target="_blank"><button class="btn exp-btn">LOR</button></a>
+                        <a href="https://drive.google.com/file/d/1HnevaizcPmI5DE_wvorAqzZt_ZaH4koP/view?usp=drive_link"
+                            target="_blank"><button class="btn exp-btn">Certificate</button></a>
                     </div>
                 </div>
             </div>
@@ -439,6 +443,49 @@
         <section id="projects" class="container full-vh d-flex-col-center">
             <h2 class="title-section">Projects</h2>
             <div class="cards project-cards d-flex">
+                <div class="card project-card">
+                    <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
+                    <section class="card-body d-flex-col">
+                        <h3 class="card-title">NLP Review-Classification</h3>
+                        <span>Skills:
+                            <i class="ci ci-python ci-2x"></i>
+                            <span class="iconify" data-icon="logos:pandas" data-width="20" data-height="20"
+                                style="background-color: white;"></span>
+                            <img src="https://camo.githubusercontent.com/4592b4c82382213c9b29aec5d01698ae1a6f2121747bbeb649e1ec56263f6921/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f5363696b69745f6c6561726e5f6c6f676f5f736d616c6c2e737667"
+                                width="20" height="20">
+                            <img src="./images/SpaCy_logo.svg.png" height="15" width="40">
+
+                            <p class="card-desc">It's an NLP Review-Classification Project</p>
+                            <div class="card-footer d-flex space-between">
+                                <span class="card-tag">open-source</span>
+                                <a class="project-link d-flex"
+                                    href="https://github.com/omchaudhari1107/Review-Analysis.git" target="_blank">Source
+                                    <span class="iconify" data-icon="uil:external-link-alt" data-width="24"
+                                        data-height="24"></span></a>
+                            </div>
+                    </section>
+                </div>
+                <div class="card project-card">
+                    <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
+                    <section class="card-body d-flex-col">
+                        <h3 class="card-title">YouTube SageBot</h3>
+                        <span>Skills:
+                            <i class="ci ci-python ci-2x"></i>
+                            🤗
+
+                            <img src="./images/SpaCy_logo.svg.png" height="15" width="40">
+
+                            <p class="card-desc">YouTube Q&A chatbot extracts and answers questions from video
+                                transcripts.</p>
+                            <div class="card-footer d-flex space-between">
+                                <span class="card-tag">open-source</span>
+                                <a class="project-link d-flex"
+                                    href="https://github.com/omchaudhari1107/YouTube-QNA-Chatbot.git"
+                                    target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
+                                        data-width="24" data-height="24"></span></a>
+                            </div>
+                    </section>
+                </div>
                 <!-- <div class="card project-card">
                     <img class="card-thumbnail" src="./images/img1.jpg" alt="Img not found" loading="lazy"
                          >
@@ -456,8 +503,7 @@
                     </section>
                 </div> -->
 
-                <div class="card project-card">
-                    <!-- <img class="card-thumbnail" src="./images/img2.jpg" alt="Img not found" loading="lazy"> -->
+                <!-- <div class="card project-card">
                     <section class="card-body d-flex-col">
                         <h3 class="card-title">Gesture Recognition</h3>
                         <span>Skills:
@@ -476,7 +522,7 @@
                                     data-width="24" data-height="24"></span></a>
                         </div>
                     </section>
-                </div>
+                </div> -->
 
                 <!-- <div class="card project-card">
                     <img class="card-thumbnail" src="./images/img3.jpg" alt="Img not found" loading="lazy">
@@ -510,23 +556,53 @@
                     <!-- <img class="card-thumbnail" src="./images/img4.jpg" alt="Img not found" loading="lazy"> -->
                     <section class="card-body d-flex-col">
                         <h3 class="card-title d-flex" style="justify-content: space-between;">
-                            <span>Text Smilarity</span>
-                            <a href="https://huggingface.co/spaces/Om1107/String_Similarity_Using_CV" class="live" target="_blank"><span class="blink">🔴</span></a>
+                            <span>CV Text Smilarity</span>
+                            <a href="https://huggingface.co/spaces/Om1107/String_Similarity_Using_CV" class="live"
+                                target="_blank"><span class="blink">🔴</span></a>
                         </h3>
                         <span>Skills:
                             🤗
                             <img src="./images/SpaCy_logo.svg.png" alt="" height="15" width="40">
                         </span>
-                        <p class="card-desc">Its an webapp which convert bunch of DOCX's to PDF's</p>
+                        <p class="card-desc">You can find the Smilarity between two text or string</p>
                         <div class="card-footer d-flex space-between">
                             <span class="card-tag">open-source</span>
                             <!-- <a href="https://huggingface.co/spaces/Om1107/String_Similarity_Using_CV" class="live" target="_blank"><span class="blink">🔴</span></a> -->
-                            <a class="project-link d-flex" href="https://github.com/omchaudhari1107/String-Similarity-Using-NLP"
-                                target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt" data-width="24" data-height="24"></span></a>
+                            <a class="project-link d-flex"
+                                href="https://github.com/omchaudhari1107/String-Similarity-Using-NLP"
+                                target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
+                                    data-width="24" data-height="24"></span></a>
                         </div>
                     </section>
                 </div>
 
+                <div class="card project-card">
+                    <!-- <img class="card-thumbnail" src="./images/cat.webp" alt="Img not found" loading="lazy"> -->
+                    <section class="card-body d-flex-col">
+                        <h3 class="card-title d-flex" style="justify-content: space-between;">
+                            <span>Cat/Dog Classifier</span>
+                            <a href="https://huggingface.co/spaces/Om1107/Cat-Dog-Classification" class="live"
+                                target="_blank"><span class="blink">🔴</span></a>
+                        </h3>
+                        <span class="text">Skills:
+                            <i class="ci ci-python ci-2x"></i>
+                            <span class="iconify" data-icon="logos:pandas" data-width="20" data-height="20"
+                                style="background-color: white;"></span>
+
+                            <img src="https://camo.githubusercontent.com/4592b4c82382213c9b29aec5d01698ae1a6f2121747bbeb649e1ec56263f6921/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f5363696b69745f6c6561726e5f6c6f676f5f736d616c6c2e737667"
+                                width="20" height="20">
+
+                            <p class="card-desc">It recognize between cat and dog image.
+                            </p>
+                            <div class="card-footer d-flex space-between">
+                                <span class="card-tag">open-source</span>
+                                <a class="project-link d-flex"
+                                    href="https://github.com/omchaudhari1107/Cat-Dog-predictor.git"
+                                    target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
+                                        data-width="24" data-height="24"></span></a>
+                            </div>
+                    </section>
+                </div>
                 <!-- <div class="card project-card">
                     <img class="card-thumbnail" src="./images/img5.jpg" alt="Img not found" loading="lazy"
                          >
@@ -575,7 +651,30 @@
                         </div>
                     </section>
                 </div> -->
+                <div class="card project-card">
+                    <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
+                    <section class="card-body d-flex-col">
+                        <h3 class="card-title">Capstone Analysis</h3>
+                        <span>Skills:
+                            <i class="ci ci-python ci-2x"></i>
+                            <span class="iconify" data-icon="logos:pandas" data-width="20" data-height="20"
+                                style="background-color: white;"></span>
 
+                            <img src="https://camo.githubusercontent.com/4592b4c82382213c9b29aec5d01698ae1a6f2121747bbeb649e1ec56263f6921/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f5363696b69745f6c6561726e5f6c6f676f5f736d616c6c2e737667"
+                                width="20" height="20">
+
+                            <p class="card-desc">This project aims to predict car prices based on various features such
+                                as mileage, engine volume, number of cylinders, and others. The dataset used for this
+                                project is sourced from "capstone.csv".</p>
+                            <div class="card-footer d-flex space-between">
+                                <span class="card-tag">open-source</span>
+                                <a class="project-link d-flex"
+                                    href="https://github.com/omchaudhari1107/Capstone-Advanced-Data-Science-Project.git"
+                                    target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
+                                        data-width="24" data-height="24"></span></a>
+                            </div>
+                    </section>
+                </div>
                 <div class="card project-card">
                     <!-- <img class="card-thumbnail" src="./images/img7.webp" alt="Img not found" loading="lazy"> -->
                     <section class="card-body d-flex-col">
@@ -623,32 +722,7 @@
                     </section>
                 </div>
 
-                <div class="card project-card">
-                    <!-- <img class="card-thumbnail" src="./images/cat.webp" alt="Img not found" loading="lazy"> -->
-                    <section class="card-body d-flex-col">
-                        <h3 class="card-title d-flex" style="justify-content: space-between;">
-                            <span>Cat/Dog Classifier</span>
-                            <a href="https://huggingface.co/spaces/Om1107/Cat-Dog-Classification" class="live" target="_blank"><span class="blink">🔴</span></a>
-                        </h3>
-                        <span class="text">Skills:
-                            <i class="ci ci-python ci-2x"></i>
-                            <span class="iconify" data-icon="logos:pandas" data-width="20" data-height="20"
-                                style="background-color: white;"></span>
 
-                            <img src="https://camo.githubusercontent.com/4592b4c82382213c9b29aec5d01698ae1a6f2121747bbeb649e1ec56263f6921/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f5363696b69745f6c6561726e5f6c6f676f5f736d616c6c2e737667"
-                                width="20" height="20">
-
-                            <p class="card-desc">It recognize between cat and dog image.
-                            </p>
-                            <div class="card-footer d-flex space-between">
-                                <span class="card-tag">open-source</span>
-                                <a class="project-link d-flex"
-                                    href="https://github.com/omchaudhari1107/Cat-Dog-predictor.git"
-                                    target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
-                                        data-width="24" data-height="24"></span></a>
-                            </div>
-                    </section>
-                </div>
 
                 <!-- <div class="card project-card">
                     <img class="card-thumbnail" src="./images/email.webp" alt="Img not found" loading="lazy">
@@ -674,75 +748,6 @@
                     </section>
                 </div> -->
 
-                <div class="card project-card">
-                    <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
-                    <section class="card-body d-flex-col">
-                        <h3 class="card-title">Capstone Analysis</h3>
-                        <span>Skills:
-                            <i class="ci ci-python ci-2x"></i>
-                            <span class="iconify" data-icon="logos:pandas" data-width="20" data-height="20"
-                                style="background-color: white;"></span>
-
-                            <img src="https://camo.githubusercontent.com/4592b4c82382213c9b29aec5d01698ae1a6f2121747bbeb649e1ec56263f6921/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f5363696b69745f6c6561726e5f6c6f676f5f736d616c6c2e737667"
-                                width="20" height="20">
-
-                            <p class="card-desc">This project aims to predict car prices based on various features such
-                                as mileage, engine volume, number of cylinders, and others. The dataset used for this
-                                project is sourced from "capstone.csv".</p>
-                            <div class="card-footer d-flex space-between">
-                                <span class="card-tag">open-source</span>
-                                <a class="project-link d-flex"
-                                    href="https://github.com/omchaudhari1107/Capstone-Advanced-Data-Science-Project.git"
-                                    target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
-                                        data-width="24" data-height="24"></span></a>
-                            </div>
-                    </section>
-                </div>
-                <div class="card project-card">
-                    <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
-                    <section class="card-body d-flex-col">
-                        <h3 class="card-title">YouTube SageBot</h3>
-                        <span>Skills:
-                            <i class="ci ci-python ci-2x"></i>
-                            🤗
-
-                            <img src="./images/SpaCy_logo.svg.png"
-                            height="15" width="40">
-
-                            <p class="card-desc">YouTube Q&A chatbot extracts and answers questions from video transcripts.</p>
-                            <div class="card-footer d-flex space-between">
-                                <span class="card-tag">open-source</span>
-                                <a class="project-link d-flex"
-                                    href="https://github.com/omchaudhari1107/YouTube-QNA-Chatbot.git"
-                                    target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
-                                        data-width="24" data-height="24"></span></a>
-                            </div>
-                    </section>
-                </div>
-
-                <div class="card project-card">
-                    <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
-                    <section class="card-body d-flex-col">
-                        <h3 class="card-title">NLP Review-Classification</h3>
-                        <span>Skills:
-                            <i class="ci ci-python ci-2x"></i>
-                            <span class="iconify" data-icon="logos:pandas" data-width="20" data-height="20"
-                                style="background-color: white;"></span>
-                            <img src="https://camo.githubusercontent.com/4592b4c82382213c9b29aec5d01698ae1a6f2121747bbeb649e1ec56263f6921/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f5363696b69745f6c6561726e5f6c6f676f5f736d616c6c2e737667"
-                                width="20" height="20">
-                            <img src="./images/SpaCy_logo.svg.png"
-                            height="15" width="40">
-
-                            <p class="card-desc">It's an NLP Review-Classification Project</p>
-                            <div class="card-footer d-flex space-between">
-                                <span class="card-tag">open-source</span>
-                                <a class="project-link d-flex"
-                                    href="https://github.com/omchaudhari1107/Review-Analysis.git"
-                                    target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
-                                        data-width="24" data-height="24"></span></a>
-                            </div>
-                    </section>
-                </div>
 
             </div>
             <div style="margin-top: 2rem;"><a href="https://github.com/omchaudhari1107?tab=repositories"
