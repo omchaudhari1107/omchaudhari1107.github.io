@@ -357,7 +357,9 @@ label {
 .menu {
     margin-right: -2.4rem;
 }
-
+.menu-item{
+    margin-top: 5px;
+}
 .menu-item a {
     display: block;
     padding: 0 2.4rem;
