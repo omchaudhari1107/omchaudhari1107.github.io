@@ -11,6 +11,18 @@
     --color-eye: rgb(255, 255, 231);
     --gap: 2.4rem
 }
+body,head{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* -webkit-user-select: none; */
+    /* -khtml-user-select: none; */
+    /* -moz-user-select: none; */
+    /* -ms-user-select: none; */
+    /* user-select: none; */
+}
+body,head:focus {
+    outline: none !important;
+}
 .spacy{
     margin-bottom: 10px;
 }
