@@ -352,17 +352,16 @@ label {
     color: var(--color-light-gray);
     font-size: 2rem;
     line-height: 4.8rem;
-
-    transition: all 300ms ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
-.menu-item a:hover {
-    color: var(--color-white);
-}
+/* .menu-item a:hover {
+    color: var(--color-eye);
+} */
 
-.act {
-    border-radius: 0%;
-    animation: under 1s ease infinite;
+.act > a{
+    color: rgb(80, 205, 255);
+    /* color: var(--color-eye); */
 }
 
 @keyframes under {
