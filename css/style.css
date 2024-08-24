@@ -57,12 +57,12 @@ body,head:focus {
 
 .highlight-green {
     border-bottom: 2px solid greenyellow;
-    /* background-color: rgba(183, 255, 0, 0.9); */
+    transition: background-color 0.6s ease-in-out;
 }
 
 .highlight-blue {
-    border-bottom: 2px solid rgb(0, 255, 221, .9);
-    /* background-color: rgb(0, 255, 221, .9); */
+    border-bottom: 2px solid rgba(0, 255, 221, 0.9);
+    transition: background-color 0.6s ease-in-out;
 }
 
 ::-webkit-scrollbar {
@@ -72,10 +72,6 @@ body,head:focus {
 .link {
     color: aqua;
     transition: all .5 ease;
-}
-
-.link:hover {
-    color: rgb(0, 172, 172);
 }
 
 /* Track */
@@ -511,6 +507,15 @@ label {
 
 .about-desc>p:hover {
     color: var(--color-eye);
+    
+}
+.about-desc > p:hover .highlight-blue {
+    background-color: rgba(0, 255, 221, 0.76);
+    /* border-radius: 10px; */
+}
+.about-desc > p:hover .highlight-green {
+    background-color: rgba(153, 255, 0, 0.842);
+    /* color: #000; */
 }
 .hover {
     transition: all 0.3s ease;
