@@ -9,6 +9,7 @@ var options = {
     '<span class="typed-mongo">MongoDB</span>',
     '<span class="typed-sql">MySQL</span>',
     '<span class="typed-pbi">PowerBI</span>',
+    '<span class="typed-ds">Selenium</span>',
     
   ],
   typeSpeed: 50,
