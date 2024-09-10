@@ -31,15 +31,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.3/src/app/ci.min.css" />
     <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- <script
-         src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-snow@3/tsparticles.preset.snow.bundle.min.js"></script> -->
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+    </script>
 
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-9GklZXnrp0gLDm3yPs/OXLoeMyOT4PtJLXC+bZU8w2SdX5mZkF1R/08+PpUy8/0LJr+5ADcEP8EgB0Ypjey1uw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-
-    <style>
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="http://lengthylyova.pythonanywhere.com/static/gh-contrib-graph/gh.css">
+    
+    <style> 
         .typed-cursor {
             /* color: transparent;
             font-weight: bolder;
@@ -137,14 +135,11 @@
                     innovative ideas into tangible solutions. I aim to blend my social nature with my technical
                     expertise, fostering a collaborative environment where ideas and innovation can thrive.
                 </P>
-                <div class="github-stat">
+                <!-- <div class="github-stat">
                     <img src="https://camo.githubusercontent.com/a4ac3021a415f193698b78d4c4db771f954db9ba1acfbdb04ad4107d4ec73ede/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d6f6d636861756468617269313130372673686f775f69636f6e733d74727565267468656d653d6461726b266c6f63616c653d656e266c61796f75743d636f6d70616374">
                     <img src="https://camo.githubusercontent.com/caf25c17be97c9d87076f8c8be39d4a8eae7e313dd4c41294d3d249bf6ea8592/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d6f6d636861756468617269313130372673686f775f69636f6e733d74727565267468656d653d6461726b266c6f63616c653d656e" >
-                </div>
-                <!-- <div id="git">
-                    <h5>Contributions in github <i class="ci ci-github-light ci-2x"></i></h5>
-                    <div id="gh" data-login="omchaudhari1107" style="margin-bottom: 30px;"></div>
                 </div> -->
+                <div id="gh" data-login="omchaudhari1107"></div>
                 <div class="cards project-cards d-flex">
                     <div class="certi-card bg-gray">
                         <section class="card-body d-flex-col">
@@ -406,7 +401,8 @@
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
                 <img class="rot"
-                    src="https://user-images.githubusercontent.com/104145773/171375260-c711bda4-ff6d-4693-9a91-b234744f13ad.svg" width="40" height="40">
+                    src="https://user-images.githubusercontent.com/104145773/171375260-c711bda4-ff6d-4693-9a91-b234744f13ad.svg"
+                    width="40" height="40">
                 <span>Seaborn</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
@@ -824,6 +820,9 @@
                 style="color: yellow;">Gaur</a><a href="https://en.wikipedia.org/wiki/Nityananda" target="_blank"
                 style="color: aqua;">Nitai</a></span>
     </footer>
+    <script>
+        new GitHubCalendar(".calendar", "omchaudhari1107");
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         document.querySelectorAll(".menu-item").forEach(elem => {
@@ -832,7 +831,7 @@
             })
         });        
     </script>
-    <!-- <script src="http://lengthylyova.pythonanywhere.com/static/gh-contrib-graph/gh.js"></script> -->
+    <script src="http://lengthylyova.pythonanywhere.com/static/gh-contrib-graph/gh.js"></script>
     <script src="./script/download.js"></script>
     <script src="./script/typed.js"></script>
 </body>
