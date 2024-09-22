@@ -1,6 +1,6 @@
 document.querySelector(".btn").addEventListener("click", function () {
-  alert('CV on update')
-  return
+  // alert('CV on update')
+  // return
   var cvUrl = './Om_Chaudhari_CV.pdf';
   var link = document.createElement("a");
   link.href = cvUrl;
