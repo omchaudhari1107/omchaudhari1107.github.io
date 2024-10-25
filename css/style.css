@@ -41,7 +41,7 @@ body,head:focus {
 .hoverimg {
     /* border: 2px solid #000; */
     transition: transform .5s ease, background-size 1s ease;
-    background: linear-gradient(to bottom, rgb(55, 0, 255) 0%, rgb(0, 255, 247) 100%);
+    background: linear-gradient(to bottom, rgb(255, 255, 231) 0%, rgb(0, 179, 255) 100%);
     background-size: 100% 0;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -476,7 +476,9 @@ label {
     margin-top: 7rem;
     width: 50rem;
     border-radius: 50%;
-    border-bottom: 1rem solid rgb(0, 213, 255);
+    border: 9px solid rgb(0, 195, 255);
+    background-color: var(--color-eye);
+    /* border-bottom: 1rem solid rgb(0, 213, 255); */
     /* background: radial-gradient(circle, rgba(255, 252, 0, 1) 20%, rgba(0, 215, 255, 1) 100%); */
     user-select: none;
     -moz-user-select: none;
