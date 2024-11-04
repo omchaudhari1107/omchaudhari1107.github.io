@@ -183,7 +183,7 @@ body,head:focus {
     border-radius: 3rem;
     width: fit-content;
     font-size: small;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 3px 8px;
     transition: all .3s ease;
 }
