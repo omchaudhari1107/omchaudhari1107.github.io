@@ -105,8 +105,8 @@ body,head:focus {
 
 
 ::selection {
-    color: rgb(0, 0, 0);
-    background: rgb(255, 196, 0);
+    color: var(--color-eye);
+    background: rgb(0, 162, 255);
     /* height: 20px; */
 }
 
