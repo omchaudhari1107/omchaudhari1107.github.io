@@ -30,6 +30,9 @@ body,head:focus {
     justify-content: center;
     margin-bottom: var(--gap);
 }
+.ml-17{
+    margin-left: 17px;
+}
 .github-stat>img{
     /* width: fit-content; */
     width: 50%;
