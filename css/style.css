@@ -219,8 +219,8 @@ body,head:focus {
 #Capa_1 {
     fill: var(--color-eye);
     transition: fill 0.3s ease;
-}   d
-.micro-card.link-card.d-flex-col-center.hover {
+}   
+.micro-card-rounded.link-card.d-flex-col-center.hover {
     display: flex;
 }
 
@@ -230,7 +230,7 @@ body,head:focus {
 }
 
 /* Hover effect to turn icons black when hovering over the containing a tag */
-.micro-card.link-card.d-flex-col-center.hover:hover #icon-eye path {
+.micro-card-rounded.link-card.d-flex-col-center.hover:hover #icon-eye path {
     fill: black;
 }
 .cv:hover #Capa_1 {
@@ -342,7 +342,7 @@ label {
 }
 
 .gap {
-    gap: var(--gap);
+    gap: 10px;
 }
 
 .topbar-fixed {
@@ -576,7 +576,22 @@ label {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.micro-cards-rounded{
+    margin-top:10px ;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.micro-card-rounded {
+    display: flex;
+    align-items: center; /* Align items vertically to the center */
+    justify-content: center; /* Align items horizontally to the center */
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    opacity: 10;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
 .micro-card {
     color: var(--color-white);
     background-color: var(--color-gray);
