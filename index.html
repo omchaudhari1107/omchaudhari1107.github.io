@@ -61,6 +61,44 @@
             height: 100%;
             background: rgb(0, 183, 255);
         }
+
+        .skeleton-image {
+            height: 200px;
+            /* Adjust based on your image sizes */
+            width: 200px;
+            border-radius: 8px;
+            /* Match image border-radius */
+            background: #2a2a2e;
+            animation: shimmer 1.5s infinite linear;
+        }
+
+        /* Ensure shimmer animation exists */
+        @keyframes shimmer {
+            0% {
+                background: linear-gradient(to right, #2a2a2e 0%, #3a3a3e 50%, #2a2a2e 100%);
+                background-size: 200% 100%;
+            }
+
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        /* Adjust for specific image sizes */
+        .skeleton-image.avatar {
+            height: 150px;
+            /* Match avatar size in home section */
+            width: 150px;
+            border-radius: 50%;
+            /* Circular for avatar */
+        }
+
+        .skeleton-image.exp-img {
+            height: 200px;
+            /* Match experience section image size */
+            width: 200px;
+            border-radius: 4px;
+        }
     </style>
 </head>
 
@@ -106,7 +144,7 @@
             <span class="hi">Hello there (<img src="./images/wave-hello.gif" alt=""
                     style="width: 2.4em; margin-bottom: -15px;">) I am</span>
             <h1 id="iam">Om Chaudhari</h1>
-            <span id="iama">🤙Excel on</span>&nbsp;&nbsp;<span class="multiple-filed iam-job"></span>
+            <span id="iama">🤙Excel in</span>&nbsp;&nbsp;<span class="multiple-filed iam-job"></span>
             <div class="micro-cards-rounded link-cards d-flex gap">
                 <a class="micro-card-rounded link-card d-flex-col-center hover cv"
                     href="https://github.com/omchaudhari1107" target="_blank">
@@ -115,8 +153,7 @@
                 </a>
                 <a class="micro-card-rounded link-card d-flex-col-center hover cv"
                     href="https://gitlab.com/omchaudhari1107" target="_blank">
-                    <span class="iconify" id="icon-eye" data-icon="mdi:gitlab" data-width="40"
-                        data-height="40"></span>
+                    <span class="iconify" id="icon-eye" data-icon="mdi:gitlab" data-width="40" data-height="40"></span>
                     <!-- <span>LinkedIn</span> -->
                 </a>
                 <a class="micro-card-rounded link-card d-flex-col-center hover cv"
@@ -125,7 +162,7 @@
                         data-height="40"></span>
                     <!-- <span>LinkedIn</span> -->
                 </a>
-                
+
                 <a class="micro-card-rounded link-card d-flex-col-center hover cv"
                     href="https://www.hackerrank.com/profile/snow1107" target="_blank">
 
@@ -333,15 +370,15 @@
                 <span>Docker</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
+                <!-- <div><span class="iconify rot" data-icon="vscode-icons:file-type-django" data-width="40"
+                    data-height="40"></span></div> -->
+                <img class="rot" src="https://avatars.githubusercontent.com/u/1266152?s=200&v=4" height="40">
+                <span>Kivy</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
                 <div><span class="iconify rot" data-icon="vscode-icons:file-type-django" data-width="40"
                         data-height="40"></span></div>
                 <span>Django</span>
-            </div>
-            <div class="micro-card skill-card d-flex-col-center hover">
-                <!-- <div><span class="iconify rot" data-icon="vscode-icons:file-type-django" data-width="40"
-                        data-height="40"></span></div> -->
-                <img class="rot" src="https://avatars.githubusercontent.com/u/1266152?s=200&v=4" height="40">
-                <span>Kivy</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
                 <img class="rot"
@@ -368,6 +405,11 @@
                 <div><span class="iconify rot" data-icon="logos:javascript" data-width="37" data-height="37"></span>
                 </div>
                 <span>Javascript</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <i class="ci ci-react-native ci-6x"></i>
+                <!-- </div> -->
+                <span>RN</span>
             </div>
             <div class="micro-card skill-card d-flex-col-center hover">
                 <div><span style="background-color: white; padding: 0px 2px; border-radius: 5px;" class="iconify rot"
@@ -472,14 +514,33 @@
     <div class="">
         <section id="projects" class="container full-vh d-flex-col-center">
             <h2 class="title-section">Projects</h2>
+
             <div class="cards project-cards d-flex">
                 <div class="card project-card">
                     <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
                     <section class="card-body d-flex-col">
+                        <h3 class="card-title">Eazy Mail</h3>
+                        <span style="display: flex; align-items: center;">Skills:
+                            <i class="ci ci-react-native ci-3x"></i>
+                            <i class="ci ci-firebase ci-2x"></i></span>
+                        <p class="card-desc">It's an RN app for mailing with AI</p>
+                        <div class="card-footer d-flex space-between">
+                            <span class="card-tag-private">closed-source</span>
+                            <a class="project-link d-flex"
+                                href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=omchaudhari1107@gmail.com"
+                                target="_blank">Join Testing
+                                <span class="iconify" data-icon="uil:external-link-alt" data-width="24"
+                                    data-height="24"></span></a>
+                        </div>
+                    </section>
+                </div>
+                <div class="card project-card">
+                    <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
+                    <section class="card-body d-flex-col">
                         <h3 class="card-title d-flex" style="justify-content: space-between;">
-                            <span>GP-sync</span>
+                            <span>GP Sync</span>
                         </h3>
-                        <span>Skills:
+                        <span style="display: flex; align-items: center;  ">Skills:
                             <i class="ci ci-python ci-2x"></i>
                             <img class="rot"
                                 src="https://user-images.githubusercontent.com/25181517/184103699-d1b83c07-2d83-4d99-9a1e-83bd89e08117.png"
@@ -494,58 +555,59 @@
                             <img class="rot"
                                 src="https://github.com/marwin1991/profile-technology-icons/assets/76662862/2481dc48-be6b-4ebb-9e8c-3b957efe69fa"
                                 width="20" height="20">
-
-                            <p class="card-desc">Google Photos sync, means to scrap the google photos with the metadata.
-                                Avialabel for both windows(.exe) and linux(.deb)</p>
-                            <div class="card-footer d-flex">
-                                <span class="card-tag-private">closed-source</span>
-                                <a href="https://www.gpsync.online/" class="live ml-17" target="_blank">live<span
-                                        class="blink">🔴</span></a>
-                                <!-- <a class="project-link d-flex" href="https://github.com/omchaudhari1107/Google-Photos-Scrap.git">Source
+                        </span>
+                        <p class="card-desc">Google Photos sync, means to scrap the google photos with the metadata.
+                            Avialabel for both windows(.exe) and linux(.deb)</p>
+                        <div class="card-footer d-flex">
+                            <span class="card-tag-private">closed-source</span>
+                            <a href="https://www.gpsync.online/" class="live ml-17" target="_blank">live<span
+                                    class="blink">🔴</span></a>
+                            <!-- <a class="project-link d-flex" href="https://github.com/omchaudhari1107/Google-Photos-Scrap.git">Source
                                     <span class="iconify" data-icon="uil:external-link-alt" data-width="24"
                                         data-height="24"></span></a> -->
-                            </div>
+                        </div>
                     </section>
                 </div>
+
                 <div class="card project-card">
                     <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
                     <section class="card-body d-flex-col">
                         <h3 class="card-title">NLP Review-Classification</h3>
-                        <span>Skills:
+                        <span style="display: flex; align-items: center;">Skills:
                             <i class="ci ci-python ci-2x"></i>
                             <span class="iconify" data-icon="logos:pandas" data-width="20" data-height="20"
                                 style="background-color: white;"></span>
                             <img src="./images/SpaCy_logo.svg.png" height="15" width="40">
-
-                            <p class="card-desc">It's an NLP Review-Classification Project</p>
-                            <div class="card-footer d-flex space-between">
-                                <span class="card-tag">open-source</span>
-                                <a class="project-link d-flex"
-                                    href="https://github.com/omchaudhari1107/Review-Analysis.git" target="_blank">Source
-                                    <span class="iconify" data-icon="uil:external-link-alt" data-width="24"
-                                        data-height="24"></span></a>
-                            </div>
+                        </span>
+                        <p class="card-desc">It's an NLP Review-Classification Project</p>
+                        <div class="card-footer d-flex space-between">
+                            <span class="card-tag">open-source</span>
+                            <a class="project-link d-flex" href="https://github.com/omchaudhari1107/Review-Analysis.git"
+                                target="_blank">Source
+                                <span class="iconify" data-icon="uil:external-link-alt" data-width="24"
+                                    data-height="24"></span></a>
+                        </div>
                     </section>
                 </div>
                 <div class="card project-card">
                     <!-- <img class="card-thumbnail" src="./images/nn.webp" alt="Img not found" loading="lazy"> -->
                     <section class="card-body d-flex-col">
                         <h3 class="card-title">YouTube SageBot</h3>
-                        <span>Skills:
+                        <span style="display: flex; align-items: center;">Skills:
                             <i class="ci ci-python ci-2x"></i>
                             🤗
 
                             <img src="./images/SpaCy_logo.svg.png" height="15" width="40">
-
-                            <p class="card-desc">YouTube Q&A chatbot extracts and answers questions from video
-                                transcripts.</p>
-                            <div class="card-footer d-flex space-between">
-                                <span class="card-tag">open-source</span>
-                                <a class="project-link d-flex"
-                                    href="https://github.com/omchaudhari1107/YouTube-QNA-Chatbot.git"
-                                    target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
-                                        data-width="24" data-height="24"></span></a>
-                            </div>
+                        </span>
+                        <p class="card-desc">YouTube Q&A chatbot extracts and answers questions from video
+                            transcripts.</p>
+                        <div class="card-footer d-flex space-between">
+                            <span class="card-tag">open-source</span>
+                            <a class="project-link d-flex"
+                                href="https://github.com/omchaudhari1107/YouTube-QNA-Chatbot.git" target="_blank">Source
+                                <span class="iconify" data-icon="uil:external-link-alt" data-width="24"
+                                    data-height="24"></span></a>
+                        </div>
                     </section>
                 </div>
 
@@ -555,7 +617,7 @@
                         <h3 class="card-title d-flex" style="justify-content: space-between;">
                             <span>CV Text Smilarity</span>
                         </h3>
-                        <span>Skills:
+                        <span style="display: flex; align-items: center;">Skills:
                             🤗
                             <img src="./images/SpaCy_logo.svg.png" alt="" height="15" width="40">
                         </span>
@@ -579,19 +641,19 @@
                     <!-- <img class="card-thumbnail" src="./images/attendance.png" alt="Img not found" loading="lazy"> -->
                     <section class="card-body d-flex-col">
                         <h3 class="card-title">Attendance Tracker</h3>
-                        <span>Skills:
+                        <span style="display: flex; align-items: center;">Skills:
                             <i class="ci ci-django ci-2x"></i>
                             <i class="ci ci-postgres ci-2x"></i>
                             <i class="ci ci-mongodb ci-2x"></i>
-
-                            <p class="card-desc">It's use to take Attendance of Students.
-                            <div class="card-footer d-flex space-between">
-                                <span class="card-tag">open-source</span>
-                                <a class="project-link d-flex"
-                                    href="https://github.com/omchaudhari1107/Attendance-System.git"
-                                    target="_blank">Source <span class="iconify" data-icon="uil:external-link-alt"
-                                        data-width="24" data-height="24"></span></a>
-                            </div>
+                        </span>
+                        <p class="card-desc">It's use to take Attendance of Students.
+                        <div class="card-footer d-flex space-between">
+                            <span class="card-tag">open-source</span>
+                            <a class="project-link d-flex"
+                                href="https://github.com/omchaudhari1107/Attendance-System.git" target="_blank">Source
+                                <span class="iconify" data-icon="uil:external-link-alt" data-width="24"
+                                    data-height="24"></span></a>
+                        </div>
                     </section>
                 </div>
 
